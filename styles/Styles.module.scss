@@ -1,0 +1,186 @@
+/* For the intro */
+
+.homeHeader{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.backgroundImage{
+    width: 100%;
+    height: 150vh;
+    position: absolute;
+    filter: brightness(60%);
+}
+
+.backgroundImage img{
+    object-fit: cover;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 35vh;
+}
+
+.intro h1{
+    color: white;
+    font-size: 7em;
+    z-index: 1;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.introImage{
+    filter: brightness(70%);
+    width: 350px;
+    height: 475px;
+    position: absolute;
+}
+
+.introImage img{
+    object-fit: cover;
+    object-position: top;
+}
+@media (max-width: 768px) {
+  .backgroundImage {
+      height: 100vh; 
+  }
+
+  .intro {
+      margin-top: 20vh; 
+  }
+
+  .intro h1 {
+      font-size: 4em; 
+  }
+
+  .introImage {
+      width: 250px; 
+      height: 350px; 
+  }
+}
+/* for the description */
+
+.description{
+    position: relative;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-top: 30vw;
+    margin-left: 10vw;
+}
+.description p{
+    margin: 0px;
+    position: relative;
+}
+@media (max-width: 768px) {
+  .description {
+      font-size: 1.5em; 
+      margin-top: 10vw; 
+      margin-left: 5vw; 
+  }
+}
+  
+/* for the project */
+
+.projects{
+    position: relative;
+    color: white;
+    margin-top: 25vh;
+    padding: 10%;
+}
+
+.projectDescription{
+    display: flex;
+    height: 700px;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.imageContainer{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    z-index: 2;   
+}
+
+.imageContainer img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.column{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    font-size: 1.6vw;
+}
+
+.column:last-of-type{
+    align-items: flex-end;
+    font-size: 1vw;
+}
+
+.projectList{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 200px;
+}
+
+.projectEl{
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 4vw;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: flex-end;
+}
+.projectEl h2{
+    margin: 0px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+@media (max-width: 1200px) {
+ 
+  .imageContainer {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .column,
+  .column:last-of-type,
+  .projectEl {
+      font-size: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectDescription {
+      height: auto;
+  }
+
+  .imageContainer,
+  .column,
+  .column:last-of-type {
+      width: 100%;
+  }
+
+  .projectList {
+      margin-top: 50px;
+  }
+
+  .projectEl {
+      font-size: 4vw;
+  }
+}
+
+  
