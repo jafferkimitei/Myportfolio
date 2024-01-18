@@ -11,7 +11,7 @@ const projects = [
     src: "project1.webp",
   },
   {
-    title: "Fashion",
+    title: "Shelmith Kobia",
     src: "project2.webp",
   },
   {
