@@ -16,7 +16,7 @@ const About = () => {
   return (
     <>
       <NextSeo {...pagesSEO.about} />
-      <div className={styles['about-page']}>
+      <div className={styles.aboutPage}>
         <Header />
           <HeroSection />
         <AboutContent />

@@ -59,7 +59,7 @@ export default function Index() {
 
 
   return (
-    <div ref={container} className={styles.container}>
+    <div ref={container} className={styles.zoomContainer}>
       <div className={styles.sticky}>
         {pictures.map(({ src, scale }, index) => {
           return (  

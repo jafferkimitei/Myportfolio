@@ -1,43 +1,43 @@
 import { useRef } from 'react';
 import { useScroll, useTransform, motion } from 'framer-motion';
-import styles from '../../styles';
+import styles from '../../styles/Slider.module.scss';
 import Image from 'next/image';
 
 const slider1 = [
     {
         color: "#e3e5e7",
-        src: "c2.jpg"
+        src: "1.jpg"
     },
     {
         color: "#d6d7dc",
-        src: "decimal.jpg"
+        src: "2.jpg"
     },
     {
         color: "#e3e3e3",
-        src: "funny.jpg"
+        src: "3.jpg"
     },
     {
         color: "#21242b",
-        src: "google.jpg"
+        src: "4.jpg"
     }
 ]
 
 const slider2 = [
     {
         color: "#d4e3ec",
-        src: "maven.jpg"
+        src: "5.jpg"
     },
     {
         color: "#e5e0e1",
-        src: "panda.jpg"
+        src: "6.jpg"
     },
     {
         color: "#d7d4cf",
-        src: "powell.jpg"
+        src: "7.jpg"
     },
     {
         color: "#e1dad6",
-        src: "wix.jpg"
+        src: "8.jpg"
     }
 ]
 
@@ -54,12 +54,16 @@ export default function index() {
     const height = useTransform(scrollYProgress, [0, 0.9], [50, 0])
 
     return (
+        <>
+        <div className='text-white text-3xl text-center mt-5'>
+        <h1>UI UX DESIGNS</h1>
+        </div>
         <div ref={container} className={styles.slidingImages}>
             <motion.div style={{x: x1}} className={styles.slider}>
                     {
                         slider1.map( (project, index) => {
-                            return <div className={styles.project} style={{backgroundColor: black}} >
-                                <div key={index} className={styles.imageContainer}>
+                            return <div className={styles.project} style={{backgroundColor: 'black'}} >
+                                <div key={index} className={styles.imageCont}>
                                     <Image 
                                     fill={true}
                                     alt={"image"}
@@ -87,5 +91,6 @@ export default function index() {
                     <div className={styles.circle}></div>
                 </motion.div>
         </div>
+        </>
     )
 }

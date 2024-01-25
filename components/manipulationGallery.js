@@ -54,22 +54,22 @@ export default function Floating() {
     }
   }
   return (
-    <main onMouseMove={(e) => {manageMouseMove(e)}} className={styles.main}>
-      <div ref={plane1} className={styles.plane}>
+    <main onMouseMove={(e) => {manageMouseMove(e)}} className={styles.manipulationMain}>
+      <div ref={plane1} className={styles.floatingPlane}>
         <Image src={floating1} alt="image" width={300} />
         <Image src={floating2} alt="image" width={300} />
         <Image src={floating7} alt="image" width={225} />
       </div>
-      <div ref={plane2} className={styles.plane}>
+      <div ref={plane2} className={styles.floatingPlane}>
         <Image src={floating4} alt="image" width={250} />
         <Image src={floating6} alt="image" width={200} />
         <Image src={floating8} alt="image" width={225} />
       </div>
-      <div ref={plane3} className={styles.plane}>
+      <div ref={plane3} className={styles.floatingPlane}>
         <Image src={floating3} alt="image" width={150} />
         <Image src={floating5} alt="image" width={200} />
       </div>
-      <div className={styles.title}>
+      <div className={styles.floatingTitle}>
         <h1>Photomanipulations</h1>
         <p>Made with photoshop</p>
       </div>

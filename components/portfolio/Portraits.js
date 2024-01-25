@@ -88,11 +88,11 @@ export default function Fashion() {
   const limitedImages = shuffledImages.slice(0, 15);
 
   return (
-    <main className={styles.main}>
+    <main className={styles.scrollMain}>
       <div className={styles.spacer}>
-        <h2 className="text-center text-white text-2xl">Portrait Photography</h2>
+        <h2 className={styles.textHead}>Portrait Photography</h2>
       </div>
-      <div ref={gallery} className={styles.gallery}>
+      <div ref={gallery} className={styles.scrollGallery}>
         <Column images={limitedImages.slice(0, 3)} y={y} />
         <Column images={limitedImages.slice(3, 6)} y={y2} />
         <Column images={limitedImages.slice(6, 9)} y={y3} />

@@ -8,10 +8,14 @@ import Floating from '../components/manipulationGallery';
 import Portraits from "../components/portfolio/Portraits";
 import Intro from "../components/portfolio/Intro";
 import Slider from "../components/slider";
+import Header from "../components/Header";
+import styles from "../styles/Portfolio2.module.scss";
 
 export default function Port() {
   return (
     <>
+    <div className={styles.portfolio2}>
+    <Header />
       <Intro />
       <Cube />
       <Text />
@@ -20,6 +24,7 @@ export default function Port() {
       <Portraits />
       <Zoom />
       <Slider />
+      </div>
     </>
   );
 }

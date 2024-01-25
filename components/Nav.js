@@ -104,11 +104,11 @@ export default function Index() {
             Instagram
           </FooterLink>
           <FooterLink
-            href="https://dribbble.com/yunghavy"
+            href="https://www.youtube.com/@siccfrequencies"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Dribbble
+            Youtube
           </FooterLink>
           <FooterLink
             href="https://youpic.com/photographer/yunghavy/"

@@ -1,6 +1,10 @@
-.gallery{
+.scrollMain {
+  overflow-x: hidden;
+}
+
+.scrollGallery{
   height: 175vh;
-  background: rgb(45, 45, 45);
+  background: #050001;
   position: relative;
   display: flex;
   gap: 2vw;
@@ -50,6 +54,14 @@
 }
 
 .spacer{
-  height: 15vh;
+  height: 10vh;
+}
+
+.textHead {
+  text-align: center;
+  color: #e44b37;
+  font-size: 24px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 15px;
 }
 

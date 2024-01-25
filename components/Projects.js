@@ -35,7 +35,7 @@ export default function Index() {
       ScrollTrigger.create({
         trigger: imageContainer.current,
         pin: true,
-        start: "top-=100px",
+        start: "top-=75px",
         end: document.body.offsetHeight - window.innerHeight - 50,
       });
     }
@@ -55,12 +55,12 @@ export default function Index() {
         </div>
         <div className={styles.column}>
           <p>
-          When we&apos;re not busy turning ordinary scenes into extraordinary art, you can find us in the wild, chasing inspiration like a cheetah chasing its prey. Our natural habitat? The concrete jungle of Nairobi, where creativity knows no bounds.
+          When I&apos;m not busy turning ordinary scenes into extraordinary art, you can find me in the wild, chasing inspiration like a cheetah chasing its prey. Our natural habitat? The concrete jungle of Nairobi, where creativity knows no bounds.
           </p>
         </div>
         <div className={styles.column}>
           <p>
-          With a lens in one hand and a dash of wit in the other, We&apos;re here to make your visual dreams come true. Buckle up, because we&apos;re about to embark on a safari of creativity that&apos;s wilder than Nairobi National Park itself!
+          With a lens in one hand and a dash of wit in the other, I&apos;m here to make your visual dreams come true. Buckle up, because I&apos;M about to embark on a safari of creativity that&apos;s wilder than Nairobi National Park itself!
 
           </p>
         </div>

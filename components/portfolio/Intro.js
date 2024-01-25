@@ -1,5 +1,5 @@
 'use client';
-import styles from '../../styles/Intro.module.scss'
+import styles from '../../styles/Portfolio2.module.scss'
 import React,{ useState } from 'react';
 import Project from '../headings';
 import Modal from '../modal';
@@ -32,8 +32,8 @@ export default function Home() {
   const [modal, setModal] = useState({active: false, index: 0})
 
   return (
-  <main className={styles.main}>
-    <div className={styles.body}>
+  <main className={styles.introMain}>
+    <div className={styles.introBody}>
       {
         projects.map( (project, index) => {
           return <Project index={index} title={project.title} setModal={setModal} key={index}/>

@@ -1,10 +1,10 @@
 'use client';
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import { Canvas, useLoader } from '@react-three/fiber';
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
 import styles from '../styles/Cube.module.scss';
 import { OrbitControls} from '@react-three/drei';
-import { useMotionValue, useSpring, useScroll, useTransform } from 'framer-motion';
+import { useSpring, useScroll, useTransform } from 'framer-motion';
 import { motion } from 'framer-motion-3d';
 
 export default function index() {
@@ -18,7 +18,7 @@ export default function index() {
     const smoothProgress = useSpring(progress, {damping: 20});
 
     return (
-        <div ref={container} className={styles.main}>
+        <div ref={container} className={styles.cubeMain}>
             <div className={styles.cube}>
             <div className={styles['canvas-container']}>
                 <Canvas>

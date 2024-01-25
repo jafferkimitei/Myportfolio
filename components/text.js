@@ -11,7 +11,7 @@ export default function Text() {
   const size = isHovered ? 400 : 40;
 
   return (
-    <main className={styles.container}>
+    <main className={styles.textContainer}>
       <motion.div 
         className={styles.mask}
         animate={{
