@@ -2,6 +2,9 @@
     height: 100vh;
     overflow-x: hidden;
   
+    @media (max-width: 768px) {
+      height: 50vh;  
+  }
     .mask, .body{
       width: 100%;
       height: 100%;
@@ -9,30 +12,35 @@
       align-items: center;
       justify-content: center;
       color: #afa18f;
-      font-size: 64px;
+      font-size: 4vw;
       line-height: 66px;
       cursor: default;
-  
-      
-  
-      p{
-        width: 1000px;
-        padding:40px;
-      }
+
+      p {
+        width: 90%; 
+        padding: 3vw;
+    }
   
       span{
         color: #ec4e39;
       }
     }
   
-  
-  
     .mask{
       mask-image: url('../public/svg/mask.svg');
       mask-repeat: no-repeat;
-      mask-size: 40px;
+      mask-size: 4vw;
       background: #ec4e39;
       position: absolute;
       color: black;
+
+      @media (max-width: 768px) {
+            display: none; 
     }
   }
+
+  @media (max-width: 768px) {
+    .body {
+        font-size: 6vw; 
+    }
+}}

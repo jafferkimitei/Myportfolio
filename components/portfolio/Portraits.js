@@ -8,7 +8,7 @@ import { ref, listAll, getDownloadURL } from "firebase/storage";
 import { storage } from "../../firebaseConfig";
 
 
-export default function Fashion() {
+export default function portraits() {
   const gallery = useRef(null);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
   const [imageFolder, setImageFolder] = useState([]);
@@ -109,7 +109,7 @@ const Column = ({ images, y }) => {
     <motion.div className={styles.column} style={{ y }}>
       {images.map((url, i) => (
         <div key={i} className={styles.imageContainer}>
-          <Image src={url} alt={`Image ${i + 1}`} fill />
+          <Image src={url} alt={`Image ${i + 1}`} fill   sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 800px"/>
         </div>
       ))}
     </motion.div>

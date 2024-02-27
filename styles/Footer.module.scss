@@ -1,0 +1,65 @@
+.footerContainer {
+  height: auto;
+    background-color: #050001;
+    // to put theme color
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #fff;
+text-align: center;
+justify-content: center;
+width: 100%;
+padding-left: 5.21em;
+padding-right: 5.21em;
+}
+.footer {
+  flex-direction: column;
+    align-items: center;
+    padding-top: 4.17em;
+    padding-bottom: 4.17em;
+    display: flex;
+}
+@font-face {
+  font-family: 'Brushstrike';
+  src: url('/fonts/Brushstrike.ttf') format('truetype');
+}
+.footerSignature {
+  width: 100%; 
+  height: auto;  
+
+  h1 {
+    font-family: 'Brushstrike';
+    font-size: 6.4em; 
+    line-height: 1.2;  
+    margin: 0;  
+  }
+}
+
+.socialIcons {
+  grid-column-gap: 1.11em;
+    justify-content:center;
+    display: flex;
+    margin-top: 20px;
+    margin-top: 1.39em;
+  }
+  
+  .socialIcons a {
+    margin: 0 10px;
+  }
+  
+  .socialIcons img {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(0) invert(1);
+  }
+  
+  .socialIcons img:hover {
+    transform: scale(1.2);
+  }
+
+.rightsReserved {
+  opacity: .5;
+  margin-top: 1.39em;
+font-size: 0.9rem;
+}

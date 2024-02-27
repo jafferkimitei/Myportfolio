@@ -24,9 +24,13 @@
     position: relative;
     margin-top: 35vh;
 }
-
+@font-face {
+    font-family: 'Brushstrike';
+    src: url('/fonts/Brushstrike.ttf') format('truetype');
+  }
 .intro h1{
-    color: white;
+    color: #e44b37;
+     font-family: 'Brushstrike';
     font-size: 7em;
     z-index: 1;
     text-align: center;
@@ -62,124 +66,119 @@
       height: 350px; 
   }
 }
-/* for the description */
 
-.description{
-    position: relative;
-    color: white;
-    font-size: 2em;
-    text-transform: uppercase;
-    margin-top: 30vw;
-    margin-left: 10vw;
-}
-.description p{
-    margin: 0px;
-    position: relative;
-}
-@media (max-width: 768px) {
-  .description {
-      font-size: 1.5em; 
-      margin-top: 10vw; 
-      margin-left: 5vw; 
+
+// Mobile faashion portraits
+.textHead {
+    text-align: center;
+    color: #e44b37;
+    font-size: 24px;
+    font-family: 'Brushstrike';
+    margin-top: 15px;
   }
-}
+  .spacer{
+    height: 10vh;
+  }
+  @font-face {
+    font-family: 'Brushstrike';
+    src: url('/fonts/Brushstrike.ttf') format('truetype'); 
+  }
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 5px;
+    padding: 10px;
+  }
   
-/* for the project */
-
-.projects{
-    position: relative;
-    color: white;
-    margin-top: 50px;
-    padding: 10%;
-}
-
-.projectDescription{
-    display: flex;
-    height: 700px;
-    justify-content: space-between;
-    gap: 5%;
-}
-
-.imageContainer{
-    position: relative;
+  .image-container Image{
+    width: 100%;
     height: 100%;
-    width: 40%;
-    // z-index: 2;
-
-}
-
-.imageContainer img{
     object-fit: cover;
-    width: 100%;
-}
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
 
-.column{
-    display: flex;
-    height: 100%;
-    width: 20%;
-    font-size: 1.6vw;
-}
-
-.column:last-of-type{
-    align-items: flex-end;
-    font-size: 1vw;
-}
-
-.projectList{
-    display: flex;
-    flex-direction: column;
+  .image-container img:hover {
+    transform: scale(1.05);
+  }
+  
+  .image-wrapper {
     position: relative;
-    margin-top: 200px;
-}
-
-.projectEl{
-    width: 100%;
-    color: white;
-    text-transform: uppercase;
-    font-size: 4vw;
-    border-bottom: 1px solid white;
-    display: flex;
-    justify-content: flex-end;
-}
-.projectEl h2{
-    margin: 0px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    cursor: default;
-}
-
-@media (max-width: 1200px) {
- 
-  .imageContainer {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    img {
       width: 100%;
-      margin-bottom: 20px;
-  }
-
-  .column,
-  .column:last-of-type,
-  .projectEl {
-      font-size: 2vw;
-  }
-}
-
-@media (max-width: 768px) {
-  .projectDescription {
       height: auto;
+      border-radius: 8px;
+    }
+  }
+  
+  .image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+  
+    img {
+      max-width: fit-content;
+      max-height: 80%;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+    &.zoomed {
+      img {
+        transform: scale(1.5); 
+      }
+    }
   }
 
-  .imageContainer,
-  .column,
-  .column:last-of-type {
-      width: 100%;
-  }
-
-  .projectList {
-      margin-top: 50px;
-  }
-
-  .projectEl {
-      font-size: 4vw;
-  }
-}
 
   
+// cube
+.cubeMain{
+    height: 125vh;
+    display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: 50vh;
+}
+    .cube{
+        position: sticky;
+        margin-left: 30px;
+        top: 0;
+        height: 100vh;
+        width: 50%;
+
+        @media (max-width: 768px) {
+          width: 100%;
+          margin-left: 0;
+      }
+    }
+}
+.canvas-container {
+    width: 100%;
+    height: 100vh;
+
+    @media (max-width: 768px) {
+      height: 50vh;
+  }
+  }

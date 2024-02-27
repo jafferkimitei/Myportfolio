@@ -1,12 +1,8 @@
 
 import React from 'react';
-import Maintenance from '../components/Maintenance';
+
 
 const CustomError = ({ statusCode }) => {
-  if (statusCode === 503) {
-    // Render the maintenance page if the status code is 503
-    return <Maintenance />;
-  }
 
   // Render a generic error message for other status codes
   return (

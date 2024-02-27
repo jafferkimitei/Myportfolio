@@ -1,172 +1,88 @@
+import React, { useState, useEffect, Suspense, lazy } from "react";
+import Image from "next/image";
+import styles from "../styles/Contact.module.scss";
+import Footer from "../components/Footer";
+import { Parallax } from "react-parallax";
+import { NextSeo } from "next-seo";
+import { pagesSEO } from "../seo.config";
+import { Analytics } from "@vercel/analytics/react";
+import TestContact from "../components/ContactForm";
+import Loader from '../components/Loader';
 
-import React from "react";
-import styles from '../styles/Contact.module.scss';
-import Header from '../components/Header';
-import { useState } from 'react';
-import { useRouter } from 'next/router';
-import { NextSeo } from 'next-seo';
-import { pagesSEO } from '../seo.config';
+const ResponsiveNavbar = lazy(() => import("../components/ResponsiveNav"));
+
+const imageUrl2 = "/images/w13.jpg";
+function Contact() {
+  const languages = [
+    "What's Up?",
+    "Habari?",
+    "Rada?",
+    "Nǐ hǎo ma?",
+    "Unjani?",
+    "Konnichiwa",
+    "Kak dela?",
+  ];
+
+  const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentLanguageIndex(
+        (prevIndex) => (prevIndex + 1) % languages.length
+      );
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, []);
 
 
-const Contact = () => {
-  const router = useRouter();
-  const [formData, setFormData] = useState({
-    purpose: 'Business Inquiries',
-    firstName: '',
-    lastName: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    formData.access_key = '192be1a3-2dcc-4854-a9e3-f20bc26ec0b0';
-   
-    try {
-      const response = await fetch('/api/submitForm', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-
-       
-        alert('Form submitted successfully!');
-        setFormData({
-          purpose: 'Business Inquiries',
-          firstName: '',
-          lastName: '',
-          email: '',
-          subject: '',
-          message: '',
-        });
-        router.push('/success?submitted=true');
-      } else {
-        alert('Error submitting form. Please try again later.');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-    }
-  };
-  
   return (
     <>
-    <NextSeo {...pagesSEO.contact} />
-    <div className={styles.background}>
-    <Header />
-    <div className={styles.container}>
-    <h1 className={styles.title}>Contact</h1>
-        <div>
-        <form className={styles.form} onSubmit={handleSubmit}>
-          <div className={styles.radioGroup}>
-          <label className={styles.formLabel}>Purpose of email <span style={{ color: 'red' }}>*</span></label>
-          <div className={styles.radioOptions}>
-            <label>
-              <input
-                type="radio"
-                name="purpose"
-                value="Business Inquiries"
-                checked={formData.purpose === "Business Inquiries"}
-                onChange={handleChange}
-                className={styles.radioInput}
-                required
+      <NextSeo {...pagesSEO.contact} />
+      <Suspense fallback={<Loader />}>
+        <ResponsiveNavbar />
+        <section>
+          <div className={styles.Neo}>
+            <div className={styles.imageContainer}>
+              <Image
+                src={imageUrl2}
+                alt="Image"
+                width={600}
+                height={300}
+                priority="true"
               />
-              Business Inquiries
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="purpose"
-                value="Customer Service"
-                checked={formData.purpose === "Customer Service"}
-                onChange={handleChange}
-                className={styles.radioInput}
-                required
-              />
-              Customer Service
-              
-            </label>
+            </div>
+            <div className={styles.textContainer}>
+              <p className={styles.fadeInText}>
+                {languages[currentLanguageIndex]}
+              </p>
+            </div>
           </div>
-        </div>
-        <div>
-            <label htmlFor="firstName" className={styles.formLabel}>First Name <span style={{ color: 'red' }}>*</span></label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleChange}
-              className={styles.formInput}
-              required />
-          </div>
-          <div>
-            <label htmlFor="lastName" className={styles.formLabel}>Last Name</label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
-              className={styles.formInput} />
-          </div>
-          <div>
-            <label htmlFor="email" className={styles.formLabel}>Email <span style={{ color: 'red' }}>*</span></label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className={styles.formInput}
-              required />
-          </div>
-          <div>
-            <label htmlFor="subject" className={styles.formLabel}>Subject<span style={{ color: 'red' }}>*</span></label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              value={formData.subject}
-              onChange={handleChange}
-              className={styles.formInput}
-              required />
-          </div>
-          <div>
-            <label htmlFor="message" className={styles.formLabel}>Message (All Spam Will Be Ignored) <span style={{ color: 'red' }}>*</span></label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              className={styles.formTextarea}
-              required
-            ></textarea>
-          </div>
-          <input type="hidden" name="access_key" value="92be1a3-2dcc-4854-a9e3-f20bc26ec0b0" />
-          <div>
-            <button type="submit" className={styles.formButton}>Submit</button>
-          </div>
-        </form>
-        </div>
-        </div>
-        </div>
-      </>
+         
+        </section>
+        <Parallax
+            blur={0}
+            bgImage="/images/paralla2.jpg"
+            strength={200}
+            className={styles.parallaxContainer}
+          >
+            <div className={styles.containerDesc}>
+              <div className={styles.desc}>
+                <p>
+                  I always love connecting with people who share my passion for
+                  design and technology. Whether you're looking to bounce ideas
+                  off me, need career advice, or just want to show some love,
+                  hit me up.
+                </p>
+              </div>
+            </div>
+          </Parallax>
+        <TestContact />
+        <Footer />
+      </Suspense>
+      <Analytics />
+    </>
   );
-};
+}
 
 export default Contact;

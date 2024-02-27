@@ -1,0 +1,423 @@
+// Love.module.scss
+.body {
+  scroll-behavior: smooth;
+}
+.containerS {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    height: 50vh;
+  }
+}
+
+.heroContent {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.loveText {
+  font-size: 20em;
+  font-family: "League Gothic", sans-serif;
+  color: #e44b37;
+  &:hover {
+    transform: scale(1.2);
+    filter: blur(8px);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .loveText {
+    font-size: 8em;
+  }
+}
+.pngImage {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+@media (max-width: 768px) {
+  .pngImage {
+    display: none;
+  }
+}
+.parallaxContainer {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+
+  @media (max-width: 768px) {
+    height: 50vh;
+  }
+}
+
+.containerDesc {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+}
+
+.desc {
+  max-width: 600px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.desc p {
+  font-size: 18px;
+  line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.pageText {
+  text-align: start;
+  font-family: "League Gothic", sans-serif;
+  font-size: 15rem;
+  margin-left: 20px;
+  h1 {
+    color: #e44b37;
+  }
+  span {
+    color: aliceblue;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 10vw;
+    margin-left: 10px;
+    text-align: center;
+  }
+}
+
+.filmContainer {
+  height: 100vh;
+  text-align: center;
+  padding: 50px;
+  color: white;
+  margin-bottom: 10vh;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+    height: auto;
+  }
+}
+
+.Parallax {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.filmImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.filmImages img {
+  width: 100px;
+  height: auto;
+  margin: 0 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+//
+.carouselContainer {
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  &:before {
+    left: 0;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.7));
+  }
+
+  &:after {
+    right: 0;
+    background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.7));
+  }
+
+  .slick-slider {
+    z-index: 1;
+  }
+}
+
+.carouselItem {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  .card {
+    margin-right: 15px;
+  }
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.cardImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.overlayContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.selectedCard {
+  transform: scale(1.1);
+}
+
+.cardTitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.selectedCard {
+  .card {
+    transform: scale(1.05);
+  }
+
+  .overlay {
+    opacity: 1;
+  }
+}
+.card:hover .cardTitle {
+  opacity: 1;
+}
+//
+
+.gamesContainer {
+  height: 75vh;
+  margin-bottom: 10vh;
+}
+
+.pageTextG {
+  text-align: center;
+  font-family: "League Gothic", sans-serif;
+  font-size: 15rem;
+  margin-left: 0;
+
+  h1 {
+    color: #e44b37;
+  }
+
+  span {
+    color: aliceblue;
+  }
+}
+
+.gamesDescription {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  max-width: 50vw;
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  .gamesContainer {
+    height: auto;
+  }
+
+  .pageTextG {
+    font-size: 10vw;
+  }
+}
+.animeContainer {
+  height: 100vh;
+  background-color: #000;
+  margin-bottom: 10vh;
+  padding: 20px;
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 15s linear infinite;
+    font-size: 15rem;
+
+    @media (max-width: 768px) {
+      font-size: 10vw;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .animeContainer {
+    height: auto;
+  }
+}
+.musicContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+}
+.muscText {
+  text-align: start;
+  font-family: "League Gothic", sans-serif;
+  font-size: 15rem;
+  margin-left: 20px;
+  h1 {
+    color: #e44b37;
+
+    @media (max-width: 768px) {
+      font-size: 10vw;
+      margin-left: 10px;
+    }
+  }
+  span {
+    color: aliceblue;
+  }
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.muscP {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 1.5;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    font-size: 2rem;
+  }
+}
+
+.albumPhoto {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.playButton {
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #2980b9;
+  }
+}
+
+.songDetails {
+  margin-left: 10px;
+}
+
+.trackName {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.artist {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 12px;
+  text-align: right;
+}
+
+.songItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}

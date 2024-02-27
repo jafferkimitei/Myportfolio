@@ -1,0 +1,542 @@
+.test {
+    background-color: #000;
+}
+
+.testIntro {
+    color: #e44b37;
+}
+.desktopOnlyContent {
+  display: block; 
+}
+.mobileOnlyContent {
+  display: none; 
+}
+
+@media (max-width: 768px) {
+  .desktopOnlyContent {
+    display: none;
+  }
+
+  .mobileOnlyContent {
+    display: block; 
+  }
+}
+.containerT{
+  position: relative;
+  height: 300vh;
+}
+
+.stickyMask{
+  display: flex;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  mask-image: url('../public/svg/masktxt.svg');
+  mask-position: 52.35% center;
+  mask-repeat: no-repeat;
+  mask-size: 80%;
+}
+
+.stickyMask video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.parallaxContainer {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.containerDesc {
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 20px;
+}
+
+.desc {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.desc p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@font-face {
+  font-family: 'Backflipss';
+  src: url('/fonts/Backflipss.ttf') format('truetype');
+  font-style: normal;
+}
+
+// for about
+.aboutWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.videoContainer {
+  width: 50%;
+  height: 70%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 16/9; 
+}
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+
+.video:hover {
+  filter: grayscale(0%);
+}
+
+.rightParagraph {
+  width: 45%;
+  padding: 0 20px;
+}
+
+.rightParagraph p {
+  font-size: 16px; 
+  line-height: 1.6; 
+  color: #fff; 
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .aboutWrapper {
+      flex-direction: column-reverse; 
+      align-items: center;
+  }
+
+  .videoContainer {
+      width: 100%; 
+      height: 50vh; 
+  }
+
+  .rightParagraph {
+      width: 100%; 
+      padding: 20px; 
+  }
+
+  .rightParagraph p {
+      font-size: 14px; 
+  }
+}
+
+
+@font-face {
+  font-family: 'Brushstrike';
+  src: url('/fonts/Brushstrike.ttf') format('truetype'); 
+}
+
+// FOR the skill "expertise' section
+.wallE {
+  margin-top: 10vh;
+  p {
+    font-family: 'Brushstrike';
+    font-size: 1.9rem;
+    text-align: center;
+    color: #e44b37;
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  .wallE {
+    margin-top: 5vh;
+  }
+
+  .wallE p {
+    font-size: 1.5rem;
+  }
+}
+.expertiseContainer {
+  position: relative;
+  height: 50vh;
+
+  @media only screen and (max-width: 600px) {
+      height: 20vh; 
+  }
+
+  .parallaxImage {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+  }
+}
+// services
+.services {
+  min-height: 100vh;
+  padding-bottom: 10vh;
+}
+
+.services h1 {
+
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  // .services {
+  //   padding-bottom: 10vh; 
+  // }
+
+  .fixed {
+    font-size: 16px;
+  }
+}
+
+// values section
+@font-face {
+  font-family: 'NubrixGrotesk';
+  src: url('/fonts/NubrixGrotesk.ttf') format('truetype');
+}
+
+.valueT {
+  font-family: 'Brushstrike';
+  text-align: center;
+  font-size: 1.9rem;
+  color: #e44b37;
+}
+
+.principles {
+  font-family: 'League Gothic', sans-serif;
+  text-align: center;
+  font-size: calc(4rem + 6vw);
+  span {
+    color: #e44b37;
+  }
+}
+
+.valuesContainer {
+  position: relative;
+  height: calc(50vh - 75px);
+
+  @media only screen and (max-width: 600px) {
+    height: calc(40vh - 75px);
+  }
+
+  .parallaxImage {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+// for words
+@font-face {
+  font-family: 'Archivo Black';
+  src: url('/fonts/ArchivoBlack.ttf') format('truetype'); 
+}
+
+.word {
+  font-family: "Archivo Black";
+  background: #e44b37;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 600px) {
+    height: 30vh;
+  }
+}
+
+.words {
+  color: #e44b37;
+  font-size: 0;
+  line-height: 1.5;
+
+  @media only screen and (max-width: 600px) {
+    line-height: 1.2;
+  }
+}
+
+.words span {
+  font-size: 5rem;
+  display: inline-block;
+  animation: move 3s ease-in-out infinite;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 3rem;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+  }
+  50% {
+    text-shadow: 0 15px 30px rgba(0, 0, 0, 0.75);
+  }
+  100% {
+    transform: translate(30%, 0);
+  }
+}
+
+.words span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.words span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.words span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.words span:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.words span:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.words span:nth-child(7) {
+  animation-delay: 3s;
+}
+
+
+// NEXT CHAPTER
+@font-face {
+  font-family: 'League Gothic';
+  src: url('/fonts/leagueGothic.ttf') format('truetype'); 
+}
+
+.nxtContainer {
+  overflow: hidden;
+  position: relative;
+  height: 75vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #292929;
+  background-attachment: scroll !important;
+  text-align: center;
+  transition: background-color 300ms ease-out;
+ 
+ 
+  @media (min-width: 200px) and (max-width: 540px) {
+    height: 50vh;
+  }
+
+  @media (min-width: 541px) and (max-width: 768px) {
+    height: 70vh;
+  }
+
+  @media (min-width: 769px) and (max-width: 820px) {
+    height: 70vh;
+  }
+
+  @media (min-width: 821px) and (max-width: 911px) {
+    height: 60vh;
+  }
+
+  @media (min-width: 912px) and (max-width: 1023px) {
+    height: 40vh;
+  }
+
+}
+.nxtContainer:hover {
+  background-color: #e44b37;
+  .nxtText {
+    color: #fff;
+  }
+  .nxtText span {
+    color: #e44b37;
+  }
+
+  .nxtButton .arrow {
+    opacity: 1;
+  }
+  .buttonText {
+    color: #e44b37;
+  }
+  .nxtButton {
+    background-color: white;
+    border-radius: 15px;
+  }
+}
+.nxtText {
+  position: absolute;
+  display: flex;
+  font-family: 'League Gothic', sans-serif;
+  font-size: 17rem;
+  color: #e44b37;
+  font-weight: 400;
+ margin-left: 90px;
+ text-align: center;
+
+
+  @media (min-width: 200px) and (max-width: 540px) {
+    font-size: 6rem;
+    margin-left: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media (min-width: 541px) and (max-width: 768px) {
+    font-size: 12rem;
+    margin-left: 40px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  
+  }
+
+  @media (min-width: 769px) and (max-width: 820px) {
+    font-size: 12rem;
+    margin-left: 40px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media (min-width: 821px) and (max-width: 911px) {
+    font-size: 15rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media (min-width: 912px) and (max-width: 1023px) {
+    font-size: 15rem;
+    margin-left: 15px;
+  }
+
+
+}
+
+.nxtText span {
+  color: #292929;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+.nxtButton {
+position: relative;
+  background-color: transparent;
+  padding: 10px 20px;
+  margin-top: 450px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: 200px) and (max-width: 540px) {
+    padding: 2px 8px;
+    margin-top: 280px;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  @media (min-width: 541px) and (max-width: 768px) {
+    padding: 10px 18px;
+    margin-top: 580px;
+    background-color: white;
+    border-radius: 15px;
+  }
+  @media (min-width: 769px) and (max-width: 820px) {
+    padding: 12px 22px;
+    margin-top: 600px;
+    background-color: white;
+    border-radius: 15px;
+  }
+
+  @media (min-width: 821px) and (max-width: 911px) {
+    padding: 12px 22px;
+    margin-top: 700px;
+    background-color: white;
+    border-radius: 15px;
+  }
+  
+  @media (min-width: 912px) and (max-width: 1023px) {
+    padding: 12px 22px;
+    margin-top: 450px;
+    background-color: white;
+    border-radius: 15px;
+  }
+  // @media (min-width: 1024px) {
+  //   padding: 12px 22px;
+  //   margin-top: 450px;
+  //   background-color: white;
+  //   border-radius: 15px;
+  // }
+}
+
+
+.buttonText {
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  @media (min-width: 200px) and (max-width: 540px) {
+    color: #e44b37;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+@media (min-width: 541px) and (max-width: 768px) {
+  color: #e44b37;
+  font-weight: 800;
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+  color: #e44b37;
+  font-weight: 800;
+}
+@media (min-width: 1024px) {
+  color: #e44b37;
+  font-weight: 800;
+}
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  @media (min-width: 200px) and (max-width: 540px) {
+  display: none;
+  }
+
+  @media (min-width: 541px) and (max-width: 768px) {
+    display: none;
+  }
+  @media (min-width: 769px) and (max-width: 820px) {
+    display: none;
+  }
+
+
+  @media (min-width: 821px) and (max-width: 911px) {
+    display: none;
+  }
+  
+  @media (min-width: 912px) and (max-width: 1023px) {
+    display: none;
+  }
+}
+

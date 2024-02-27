@@ -3,6 +3,10 @@
   width: 100vw;
   overflow: hidden;
   position: relative;
+  // 
+  @media (max-width: 768px) {
+    display: none; 
+}
   .floatingPlane {
     width: 100%;
 
@@ -99,4 +103,6 @@
       margin-top: 10px;
     }
   }
+ 
 }
+

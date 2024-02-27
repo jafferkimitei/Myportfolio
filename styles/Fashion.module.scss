@@ -12,22 +12,17 @@
   box-sizing: border-box;
   overflow: hidden;
 
-  @media screen and (min-width: 768px) {
-    gap: 24px;
-  }
   .column{
       position: relative;
       height: 100%;
-      width: 25%;
+      width: 100%;
       max-width: 400px;
       min-width: 250px;
       display: flex;
       flex-direction: column;
       gap: 2vw;
 
-      @media screen and (min-width: 768px) {
-        max-width: 600px; 
-      }
+     
       .imageContainer{
           height: 100%;
           width: 100%;
@@ -56,12 +51,15 @@
 .spacer{
   height: 10vh;
 }
-
+@font-face {
+  font-family: 'Brushstrike';
+  src: url('/fonts/Brushstrike.ttf') format('truetype'); 
+}
 .textHead {
   text-align: center;
   color: #e44b37;
   font-size: 24px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Brushstrike';
   margin-top: 15px;
 }
 

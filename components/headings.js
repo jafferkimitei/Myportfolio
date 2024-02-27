@@ -2,7 +2,7 @@
 import React from 'react'
 import styles from '../styles/Intro.module.scss';
 
-export default function index({index, title, setModal}) {
+export default function Headings({index, title, setModal}) {
 
     return (
         <div onMouseEnter={() => {setModal({active: true, index})}} onMouseLeave={() => {setModal({active: false, index})}} className={styles.project}>

@@ -2,16 +2,16 @@ import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useRef } from "react";
 import styles from "../../styles/Visuals.module.scss";
-import Picture1 from "../../public/images/zoom/Barber.webp";
-import Picture2 from "../../public/images/zoom/Fishermen.webp";
-import Picture3 from "../../public/images/zoom/Giraffe.jpg";
-import Picture4 from "../../public/images/zoom/LakeNaivasha.webp";
-import Picture5 from "../../public/images/zoom/NairobiNationalPark.jpg";
-import Picture6 from "../../public/images/zoom/Naivasha-bay.webp";
-import Picture7 from "../../public/images/zoom/Zebra.webp";
+import Picture1 from "../../public/images/zoom/zoom_1.webp";
+import Picture2 from "../../public/images/zoom/zoom_2.webp";
+import Picture3 from "../../public/images/zoom/zoom_3.webp";
+import Picture4 from "../../public/images/zoom/zoom_4.webp";
+import Picture5 from "../../public/images/zoom/zoom_5.webp";
+import Picture6 from "../../public/images/zoom/zoom_6.webp";
+import Picture7 from "../../public/images/zoom/zoom_7.jpg";
 
 
-export default function Index() {
+export default function zoom() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,

@@ -1,76 +1,77 @@
-/* contact.module.scss */
-.background {
-  background-image: url('../public/images/contact-image.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+
+.Neo {
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  height: 100vh;
 }
-.container {
-  max-width: 800px;
-  margin: 0 auto;
+
+.imageContainer {
+  flex: 1;
+  margin-left: 5vw; 
+  filter: grayscale(100%); 
+  transition: filter 0.5s;
+}
+
+.imageContainer:hover {
+  filter: grayscale(0%); 
+}
+.textContainer {
+  flex: 1;
+}
+@font-face {
+  font-family: 'NubrixGrotesk';
+  src: url('/fonts/NubrixGrotesk.ttf') format('truetype');
+}
+.fadeInText {
+  font-family: 'NubrixGrotesk';
+  color: #e44b37;
+  font-size: 8.5rem;
+  opacity: 0;
+  animation: fadeIn 5s forwards;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Neo {
+    flex-direction: column;
+    height: auto; 
+  }
+
+  .imageContainer {
+    margin-left: 0; 
+  }
+}
+
+
+.parallaxContainer {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.containerDesc {
+  background-color: rgba(0, 0, 0, 0.7); 
   padding: 20px;
 }
-.title {
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: #008080;
-  text-align: center;
-}
-.form {
+
+.desc {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #EEEEEE; 
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-}
-.radioGroup {
-  margin-bottom: 15px;
 }
 
-.radioOptions label {
-  display: block;
-  margin-bottom: 8px;
-  color:rgba(0, 0, 0, 0.60);
-}
-
-.formLabel {
-  font-weight: 400;
-  color: #000000;
-}
-
-.formInput,
-.formTextarea {
-  width: calc(100% - 24px);
-  margin-bottom: 15px;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  background-color: #ffffff;
-  color: #333; 
-  box-sizing: border-box;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-.radioInput {
-  margin-right: 8px;
-  
-}
-
-.formButton {
-  background-color: #00adb5;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.formButton:hover {
-  background-color: #00858b;
+.desc p {
+  font-size: 18px;
+  line-height: 1.6;
 }

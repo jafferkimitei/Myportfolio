@@ -50,13 +50,15 @@
 }
 
 
-
-// for text
-@import url('https://fonts.googleapis.com/css?family=Cairo');
+@font-face {
+  font-family: 'Backflipss';
+  src: url('/fonts/Backflipss.ttf') format('truetype');
+  font-style: normal;
+}
 .titleT {
-  font-family: "Cairo";
+  font-family: "Backflipss";
   text-align: center;
-  color: #FFF;
+  color: #050001;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,8 +75,11 @@
   background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
-  font-size: 120px;
+  font-size: 10rem;
   margin: 10px 0;
+  @media (min-width: 200px) and (max-width: 540px) {
+    font-size: 5rem;
+  }
 }
 
 // for visuals
@@ -92,8 +97,18 @@
   width: 100%;
   height: 100%;
 }
-
+@font-face {
+  font-family: 'Brushstrike';
+  src: url('/fonts/Brushstrike.ttf') format('truetype'); 
+}
 // for the slider
+.sliderT {
+  font-family: 'Brushstrike';
+  margin-top: 5vh;
+  text-align: center;
+  color: #e44b37;
+  font-size: 24px;
+}
 .slidingImages {
   overflow: hidden;
   display: flex;
@@ -103,7 +118,6 @@
   margin-top: 100px;
   background-color: white;
   z-index: 1;
-  margin-bottom: 100vh;
   .slider {
     display: flex;
     position: relative;
@@ -116,20 +130,20 @@
       display: flex;
       align-items: center;
       justify-content: center;
+     
       .imageCont {
         position: relative;
         width: 80%;
         height: 80%;
+       
         img {
           object-fit: cover;
         }
       }
     }
   }
-
   .circleContainer {
     position: relative;
-    margin-top: 100px;
     .circle {
       height: 800%;
       width: 120%;

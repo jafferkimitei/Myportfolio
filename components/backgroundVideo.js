@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from '../styles/Slider.module.scss'; 
 
-const BackgroundVideo = () => {
+const backgroundVideo = () => {
   return (
     <div className={styles.backgroundVideo}>
       <video autoPlay loop muted className={styles.video}>
@@ -13,4 +13,4 @@ const BackgroundVideo = () => {
   );
 };
 
-export default BackgroundVideo;
+export default backgroundVideo;

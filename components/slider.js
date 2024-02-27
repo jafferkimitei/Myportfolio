@@ -41,7 +41,6 @@ const HorizontalSlider = () => {
             style={{
               width: "100vw",
               height: "100vh",
-              backgroundColor: "white",
             }}
           >
             <VisualsText />
@@ -52,7 +51,6 @@ const HorizontalSlider = () => {
             style={{
               width: "100vw",
               height: "100vh",
-              backgroundColor: "black",
             }}
           >
             <BackgroundVideo />

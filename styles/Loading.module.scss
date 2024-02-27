@@ -1,0 +1,115 @@
+$bg_color: #000000;
+$text_color: #ffffff;
+$shadow_color: #ff0000;
+$font_name: 'Telex';
+$font_size: 20px;
+
+@mixin border-radius ($r:2px) {
+	-webkit-border-radius: $r;
+	-moz-border-radius: $r;
+	border-radius: $r;
+}
+
+@mixin box-shadow ($box_shadow_color: #000088) {
+	-webkit-box-shadow: 0 0 $font_size*3 $font_size/5 $box_shadow_color;
+	-moz-box-shadow: 0 0 $font_size*3 $font_size/5 $box_shadow_color;
+	box-shadow: 0 0 $font_size*3 $font_size/5 $box_shadow_color;
+}
+
+@mixin box-3d ($perspective:500px) {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: $perspective;
+	-moz-perspective: $perspective;
+	-o-perspective: $perspective;
+	-ms-perspective: $perspective;
+	perspective: $perspective;
+}
+
+@mixin animate-rotate-x () {
+	-webkit-animation: animate-rotate-x 1s ease infinite;
+	-moz-animation: animate-rotate-x 1s ease infinite;
+	animation: animate-rotate-x 1s ease infinite;
+}
+
+@mixin ziro-percent () {
+	-webkit-transform: rotateX(1deg);
+	-moz-transform: rotateX(1deg);
+	-o-transform: rotateX(1deg);
+	-ms-transform: rotateX(1deg);
+	transform: rotateX(1deg);
+}
+
+@mixin hundread-percent () {
+	-webkit-transform: rotateX(360deg);
+	-moz-transform: rotateX(360deg);
+	-o-transform: rotateX(360deg);
+	-ms-transform: rotateX(360deg);
+	transform: rotateX(360deg);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Telex');
+.containerL {
+
+    height:100vh;
+	overflow: hidden;
+    background: $bg_color;
+	font-family: $font_name;
+}
+
+.loading {
+	color: $text_color;
+	font-size: $font_size;
+	height: $font_size;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	margin-top: -$font_size / 2;
+	@include box-3d;
+	letter-spacing: $font_size / 10;
+	text-rendering: optimizelegibility;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 2px 2px $font_size $shadow_color;
+	margin-left: $font_size;
+}
+
+.rotate {
+  display: inline;
+	position: absolute;
+	background-color: $text_color;
+	color: $bg_color;
+	@include border-radius;
+	@include box-shadow;
+	@include animate-rotate-x;
+	margin-left: -$font_size;
+}
+
+@-webkit-keyframes animate-rotate-x {
+	0% {
+		@include ziro-percent;
+	}
+	100% {
+		@include hundread-percent;
+	}
+}
+
+@-moz-keyframes animate-rotate-x {
+	0% {
+		@include ziro-percent;
+	}
+	100% {
+		@include hundread-percent;
+	}
+}
+
+@keyframes animate-rotate-x {
+	0% {
+		@include ziro-percent;
+	}
+	100% {
+		@include hundread-percent;
+	}
+}

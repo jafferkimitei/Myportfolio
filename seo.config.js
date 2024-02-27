@@ -1,4 +1,4 @@
-// seo.config.js
+
 const defaultSEO = {
     title: 'Yung Havy',
     description: 'Your one-stop creative for web development, photography, videography, and UI/UX design',
@@ -25,34 +25,28 @@ const defaultSEO = {
       ...defaultSEO,
       
     },
-    about: {
+    love: {
       ...defaultSEO,
-      title: 'About || Yung Havy',
-      description: 'Learn more about my journey and passion for creative visual content..',
+      title: 'The loves of Yunghavy',
+      description: 'Explore the passions that fuel my creative fire for visual storytelling.',
       
     },
-    gallery: {
+    works: {
       ...defaultSEO,
-      title: 'Gallery || Yung Havy',
-      description: 'Browse through my stunning gallery showcasing portraits, events and fashion photography.',
+      title: 'Selected works of Yunghavy',
+      description: 'Witness the magic I unfold through stunning visuals.',
       
     },
-    visuals: {
+    rates: {
       ...defaultSEO,
-      title: 'Visuals || Yung Havy',
-      description: 'Immerse yourself in a visual experience with my captivating visual content.',
-      
-    },
-    designs: {
-      ...defaultSEO,
-      title: 'Designs || Yung Havy',
-      description: 'Discover my innovative and user-centric UI/UX design solutions.',
+      title: 'Rates of Yunghavy',
+      description: 'Invest in visual content that captures your essence and amplifies your brand.',
       
     },
     contact: {
       ...defaultSEO,
-      title: 'Contact || Yung Havy',
-      description: 'Get in touch with me for your creative visual needs. We would love to hear from you!',
+      title: 'Contact',
+      description: 'Connect with me and lets discuss how my solutions can elevate your digital presence.',
       
     },
   };

@@ -8,7 +8,7 @@ import { ref, listAll, getDownloadURL } from "firebase/storage";
 import { storage } from "../../firebaseConfig";
 
 
-export default function Fashion() {
+export default function fashion() {
   const gallery = useRef(null);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
   const [imageFolder, setImageFolder] = useState([]);
@@ -22,6 +22,7 @@ export default function Fashion() {
   const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3]);
   const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25]);
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
+  const y5 = useTransform(scrollYProgress, [0, 1], [0, height * 0.25]);
 
   useEffect(() => {
     const lenis = new Lenis();
@@ -84,7 +85,7 @@ export default function Fashion() {
   const shuffledImages = allFashionPhotographyImages.sort(
     () => Math.random() - 0.5
   );
-  const limitedImages = shuffledImages.slice(0, 11);
+  const limitedImages = shuffledImages.slice(0, 15);
 
   return (
     <main className={styles.scrollMain}>
@@ -96,6 +97,7 @@ export default function Fashion() {
         <Column images={limitedImages.slice(3, 6)} y={y2} />
         <Column images={limitedImages.slice(6, 9)} y={y3} />
         <Column images={limitedImages.slice(9, 12)} y={y4} />
+        <Column images={limitedImages.slice(12,15)} y={y5} />
       </div>
       <div className={styles.spacer}></div>
     </main>
@@ -107,7 +109,7 @@ const Column = ({ images, y }) => {
     <motion.div className={styles.column} style={{ y }}>
       {images.map((url, i) => (
         <div key={i} className={styles.imageContainer}>
-          <Image src={url} alt={`Image ${i + 1}`} fill />
+          <Image src={url} alt={`Image ${i + 1}`} fill   sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 800px"/>
         </div>
       ))}
     </motion.div>

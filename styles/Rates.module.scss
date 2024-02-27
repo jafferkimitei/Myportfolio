@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Brushstrike";
+  src: url("/fonts/Brushstrike.ttf") format("truetype");
+}
+.sliderContainer {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.ratePContainer {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/images/photorates.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: relative;
+}
+
+.ratevContainer {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/images/videorates.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: relative;
+}
+.ratedContainer {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/images/designrates.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: relative;
+}
+
+.ratewContainer {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/images/webrates.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: relative;
+}
+.rateHeader {
+  font-family: "Brushstrike", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #e44b37;
+  margin-bottom: 10vh;
+}
+.photoCard {
+  display: flex;
+  flex-wrap:nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px; 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.category {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  background-color: #050001;
+  background: linear-gradient(to bottom, #e44b37, #050001);
+  font-family: sans-serif;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    width: calc(100% - 20px);
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.category h2 {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #050001;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.special {
+  color: #e44b37;
+  font-style: italic;
+  margin-top: 5vh;
+  text-align: center;
+  font-weight: 600;
+  color-scheme: dark;
+  text-decoration: wavy;
+  text-transform: uppercase;
+}
+.pricing {
+  font-family: 'League Gothic', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  list-style: none;
+  padding: 0;
+  li {
+    margin-bottom: 10px;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+  }
+  li:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #050001;
+  }
+}
+
+
+// responsive
+.react-multi-carousel-item {
+  margin-right: 15px; // Adjust spacing between carousel items as needed
+}
+
+.react-multi-carousel-track {
+  display: flex;
+  align-items: center;
+}
+
+.react-multi-carousel-list {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .react-multi-carousel-item {
+    margin-right: 0; // Remove margin for small screens
+  }
+
+  .react-multi-carousel-track {
+    flex-direction: column; // Change the direction for small screens
+  }
+
+  .react-multi-carousel-list {
+    width: 100%;
+  }
+}
+

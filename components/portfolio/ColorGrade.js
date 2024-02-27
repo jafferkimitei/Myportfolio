@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import styles from '../../styles/Slider.module.scss';
 
-const ColorGrade = () => {
+const colorGrade = () => {
   return (
     <div className={styles.gradeContainer}>
       <div className={styles.imageContainer}>
@@ -16,4 +16,4 @@ const ColorGrade = () => {
   );
 };
 
-export default ColorGrade;
+export default colorGrade;
