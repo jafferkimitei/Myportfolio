@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -46,7 +47,8 @@ const DesktopNav = () => {
       {/* Logo */}
       <div className="text-xl font-bold text-white hover:text-red-800">
         <Link  href="/"  legacyBehavior>
-        <img className="w-8 h-8" src="/images/logo-sep.svg" alt="Logo" />
+        <Image className="w-8 h-8" src="/images/logo-sep.svg" alt="Logo" width={32} height={32} />
+
         </Link>
       </div>
 

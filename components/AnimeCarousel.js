@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from "next/image";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -64,7 +65,8 @@ const AnimeCarousel = () => {
             }`}
           >
             <div className={styles.card} onClick={() => handleCardClick(item.id)}>
-              <img src={item.imageUrl} alt={item.title} className={styles.cardImage} />
+              <Image src={item.imageUrl} alt={item.title} className={styles.cardImage} width={300} 
+                height={200}/>
               <div className={styles.overlay}>
                 <h3 className={styles.cardTitle}>{item.title}</h3>
               </div>

@@ -38,12 +38,12 @@ export default function CubeModel() {
 function Cube({progress}) {
 
     const mesh = useRef(null);
-    const texture_1 = useLoader(TextureLoader, "/images/cubeImage1.webp")
-    const texture_2 = useLoader(TextureLoader, "/images/cubeImage2.webp")
-    const texture_3 = useLoader(TextureLoader, "/images/cubeImage3.webp")
-    const texture_4 = useLoader(TextureLoader, "/images/cubeImage4.webp")
-    const texture_5 = useLoader(TextureLoader, "/images/cubeImage5.webp")
-    const texture_6 = useLoader(TextureLoader, "/images/cubeImage6.webp")
+    const texture_1 = useLoader(TextureLoader, "/images/cubeimage1.webp")
+    const texture_2 = useLoader(TextureLoader, "/images/cubeimage2.webp")
+    const texture_3 = useLoader(TextureLoader, "/images/cubeimage3.webp")
+    const texture_4 = useLoader(TextureLoader, "/images/cubeimage4.webp")
+    const texture_5 = useLoader(TextureLoader, "/images/cubeimage5.webp")
+    const texture_6 = useLoader(TextureLoader, "/images/cubeimage6.webp")
 
     return (
         <motion.mesh ref={mesh} rotation-y={progress} rotation-x={progress}>

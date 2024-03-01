@@ -14,7 +14,7 @@ function TextAbout() {
         </div>
       <div className={styles.rightParagraph}>
         <p>
-          Through the years, I've honed my expertise in UI/UX design, capturing
+          Through the years, I&apos;ve honed my expertise in UI/UX design, capturing
           breathtaking photographs, and delivering compelling video content. My
           mission: to stir inspiration and evoke emotions in every project I
           take on, be it crafting an intuitive interface, capturing that

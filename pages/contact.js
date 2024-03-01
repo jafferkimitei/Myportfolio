@@ -70,7 +70,7 @@ function Contact() {
               <div className={styles.desc}>
                 <p>
                   I always love connecting with people who share my passion for
-                  design and technology. Whether you're looking to bounce ideas
+                  design and technology. Whether you&apos;re looking to bounce ideas
                   off me, need career advice, or just want to show some love,
                   hit me up.
                 </p>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from "../styles/Love.module.scss";
 
 const songsData = [
@@ -42,7 +43,8 @@ const Music = () => {
       {songsData.map((song, index) => (
         <div key={index} className={styles.songItem}>
           <div className={styles.albumPhoto}>
-            <img src={song.albumPhoto} alt={`Album Cover for ${song.trackName}`} />
+            <Image src={song.albumPhoto} alt={`Album Cover for ${song.trackName}`} width={60} 
+                height={60}/>
           </div>
           <div className={styles.songDetails}>
             <p className={styles.trackName}>{song.trackName}</p>

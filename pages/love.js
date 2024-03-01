@@ -33,14 +33,14 @@ function Love() {
 
         <Parallax
           blur={0}
-          bgImage="/images/modalImage2.webp"
+          bgImage="/images/modalimage2.webp"
           strength={200}
           className={styles.parallaxContainer}
         >
           <div className={styles.containerDesc}>
             <div className={styles.desc}>
               <p>
-                We all have passions—those loves that just make us happy. This
+                We all have passions,those loves that just make us happy. This
                 page is dedicated to the things that give me joy and enrich my
                 life.
               </p>

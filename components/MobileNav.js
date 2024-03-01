@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -68,7 +69,7 @@ const MobileNav = () => {
       {/* Logo */}
       <div className="text-xl font-bold">
         <Link href="/" legacyBehavior>
-        <img className="w-8 h-8" src="/images/logo-sep.svg" alt="Logo" />
+        <Image className="w-8 h-8" src="/images/logo-sep.svg" alt="Logo" width={30} height={30} />
         </Link>
       </div>
 
