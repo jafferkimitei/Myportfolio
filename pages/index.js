@@ -13,7 +13,7 @@ import HomeHero from "../components/HomeHero";
 const Mask = lazy(() => {
   return new Promise(resolve => {
     setTimeout(() => {
-      resolve(import("../components/textMask"));
+      resolve(import("../components/TextMask"));
     }, 1000);
   });
 });

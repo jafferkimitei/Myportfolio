@@ -14,7 +14,7 @@ export default {
             },
             "files": [
                 ".eslintrc.js",
-                ".eslintrc.cjs"
+                ".eslintrc.mjs"
             ],
             "parserOptions": {
                 "sourceType": "script"
