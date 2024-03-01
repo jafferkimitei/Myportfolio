@@ -11,7 +11,7 @@ const defaultSEO = {
       description: 'Nairobi Photographer, Web developer, UI/UX Designer and Film maker.',
       images: [
         {
-          url: '/images/logo.JPG',
+          url: '/images/logo.webp',
           width: 1200,
           height: 630,
           alt: 'Yung Havy',
