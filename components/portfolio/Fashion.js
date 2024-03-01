@@ -8,7 +8,7 @@ import { ref, listAll, getDownloadURL } from "firebase/storage";
 import { storage } from "../../firebaseConfig";
 
 
-export default function fashion() {
+export default function Fashion() {
   const gallery = useRef(null);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
   const [imageFolder, setImageFolder] = useState([]);

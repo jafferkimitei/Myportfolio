@@ -9,7 +9,7 @@ import Rate4 from "./WebRates";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const rateContent = () => {
+const RateContent = () => {
   useEffect(() => {
     let sections = gsap.utils.toArray(".panel");
     gsap.to(sections, {
@@ -77,4 +77,4 @@ const rateContent = () => {
   );
 };
 
-export default rateContent;
+export default RateContent;

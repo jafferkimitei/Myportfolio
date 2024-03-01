@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import styles from '../../styles/Slider.module.scss';
 
-const visuals = () => {
+const Visuals = () => {
     const [videos, setVideos] = useState([]);
   
     useEffect(() => {
@@ -49,4 +49,4 @@ const visuals = () => {
   </div>
 );
         }
-  export default visuals;
+  export default Visuals;

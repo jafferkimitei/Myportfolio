@@ -11,7 +11,7 @@ import Picture6 from "../../public/images/zoom/zoom_6.webp";
 import Picture7 from "../../public/images/zoom/zoom_7.jpg";
 
 
-export default function zoom() {
+export default function Zoom() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,

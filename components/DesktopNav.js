@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-const desktopNav = () => {
+const DesktopNav = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const router = useRouter();
 
@@ -110,4 +110,4 @@ const desktopNav = () => {
   );
 };
 
-export default desktopNav;
+export default DesktopNav;

@@ -53,7 +53,7 @@ function videographyRates() {
             <li>5 - 10minute video - Kes.40,000</li>
             <li>1- 5minute video - Kes.20,000</li>
             <li>above 10 minutes - Kes.60,000</li>
-            <li>'Promo videos - Kes5000(15-60s)'</li>
+            <li>Promo videos - Kes5000(15-60s)</li>
             <li></li>
             <li></li>
             <h3 className={styles.special}>Special Package</h3>
@@ -88,7 +88,7 @@ function videographyRates() {
             <li>5 - 10minute video - Kes.40,000</li>
             <li>1- 5minute video - Kes.20,000</li>
             <li>above 10 minutes - Kes.60,000</li>
-            <li>'Promo videos - Kes5000(15-60s)'</li>
+            <li>Promo videos - Kes5000(15-60s)</li>
             <li></li>
             <li></li>
             <h3 className={styles.special}>Special Package</h3>

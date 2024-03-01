@@ -27,7 +27,7 @@ const projects = [
   }
 ]
 
-export default function intro() {
+export default function Intro() {
 
   const [modal, setModal] = useState({active: false, index: 0})
 

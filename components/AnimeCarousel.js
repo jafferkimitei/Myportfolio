@@ -46,7 +46,7 @@ const carouselSettings = {
   ],
 };
 
-const animeCarousel = () => {
+const AnimeCarousel = () => {
   const [selectedCard, setSelectedCard] = useState(null);
 
   const handleCardClick = (id) => {
@@ -76,4 +76,4 @@ const animeCarousel = () => {
   );
 };
 
-export default animeCarousel;
+export default AnimeCarousel;

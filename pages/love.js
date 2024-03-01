@@ -65,7 +65,7 @@ function Love() {
                 VIDEO <span>GAMES</span>
               </h1>
               <p className={styles.gamesDescription}>
-              COD's pulse-pounding battles, Uncharted's sprawling adventures, FIFA's stadium roars, and Tomb Raider's mind-bending puzzles - my virtual world explodes with diverse thrills! Games offer more than entertainment; they're portals to endless worlds and lasting memories.
+              COD&apos;s pulse-pounding battles, Uncharted&apos;s sprawling adventures, FIFA&apos;s stadium roars, and Tomb Raider&apos;s mind-bending puzzles - my virtual world explodes with diverse thrills! Games offer more than entertainment; they&apos;re portals to endless worlds and lasting memories.
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ function Love() {
                 MUSIC <span>TASTE</span>
               </h1>
               <p className={styles.muscP}> 
-My musical taste is like a wild party where old-school hip-hop throws down with Afrobeats, house music moonwalks through, rock screams for an encore, trap drops the bass like a grandma's flip-flop, and even R&B croons a lullaby. Basically, anything that gets my feet movin' (and head boppin') is welcome!
+My musical taste is like a wild party where old-school hip-hop throws down with Afrobeats, house music moonwalks through, rock screams for an encore, trap drops the bass like a grandma&apos;s flip-flop, and even R&B croons a lullaby. Basically, anything that gets my feet movin&apos; (and head boppin&apos;) is welcome!
               </p>
             </div>
             <Music />

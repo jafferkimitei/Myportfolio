@@ -46,7 +46,7 @@ const carouselSettings = {
   ],
 };
 
-const filmCarousel = () => {
+const FilmCarousel = () => {
   const [selectedCard, setSelectedCard] = useState(null);
 
   const handleCardClick = (id) => {
@@ -78,4 +78,4 @@ const filmCarousel = () => {
   );
 };
 
-export default filmCarousel;
+export default FilmCarousel;

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
+import Image from 'next/image';
 import { Parallax } from "react-parallax";
 import styles from "../styles/test.module.scss";
 import { useInView } from "react-intersection-observer";
 
-function services() {
+function Services() {
   const [entered, setEntered] = useState("0");
 
   // Custom hook to track intersection and update entered state
@@ -66,7 +67,7 @@ function services() {
                         </p>
                       </div>
                     </div>
-                    <img
+                    <Image
                       className="mx-auto md:max-md:-translate-x-[5%] md:my-0 my-8"
                       src="/images/filmmaker.webp"
                       width={519}
@@ -115,11 +116,11 @@ function services() {
                           Multifaceted Design Dynamo
                         </h1>
                         <p className="text-red-400 mb-6">
-                        I'm a design chameleon, thriving in various domains like web, app, graphic design, and more. Armed with a keen eye for beauty and tech wizardry, I breathe life into ideas through stunning, user-friendly experiences. I craft interfaces, build brands, and conquer all things digital design, making me a force in the ever-changing design landscape.
+                        I&apos;m a design chameleon, thriving in various domains like web, app, graphic design, and more. Armed with a keen eye for beauty and tech wizardry, I breathe life into ideas through stunning, user-friendly experiences. I craft interfaces, build brands, and conquer all things digital design, making me a force in the ever-changing design landscape.
                         </p>
                       </div>
                     </div>
-                    <img
+                    <Image
                       className="mx-auto md:max-md:-translate-x-[5%] md:my-0 my-8"
                       src="/images/designer.webp"
                       width={519}
@@ -172,7 +173,7 @@ function services() {
                         </p>
                       </div>
                     </div>
-                    <img
+                    <Image
                       className="mx-auto md:max-md:-translate-x-[5%] md:my-0 my-8"
                       src="/images/website.webp"
                       width={519}
@@ -193,4 +194,4 @@ function services() {
   );
 }
 
-export default services;
+export default Services;

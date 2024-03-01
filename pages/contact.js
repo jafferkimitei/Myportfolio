@@ -33,7 +33,7 @@ function Contact() {
     }, 3000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [languages]);
 
 
   return (

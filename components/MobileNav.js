@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-const mobileNav = () => {
+const MobileNav = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
@@ -152,4 +152,4 @@ const mobileNav = () => {
   );
 };
 
-export default mobileNav;
+export default MobileNav;

@@ -8,7 +8,7 @@ import { useSpring, useScroll, useTransform } from 'framer-motion';
 import { motion } from 'framer-motion-3d';
 import { Parallax } from 'react-parallax';
 
-export default function cubeModel() {
+export default function CubeModel() {
 
     const container = useRef(null);
     const { scrollYProgress } = useScroll({

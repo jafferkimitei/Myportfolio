@@ -10,7 +10,7 @@ import Loader from '../components/Loader';
 import HomeHero from "../components/HomeHero";
 
 // Lazy-loaded
-const Mask = lazy(() => {
+const TextMask = lazy(() => {
   return new Promise(resolve => {
     setTimeout(() => {
       resolve(import("../components/textMask"));
@@ -33,7 +33,7 @@ function Index() {
       <div className={styles.desktopOnlyContent}>
       <Suspense fallback={<Loader />}>
         <Intro />
-        <Mask />
+        <TextMask />
         <Parallax
           blur={0}
           bgImage="/images/nairobi.webp"
@@ -43,7 +43,7 @@ function Index() {
           <div className={styles.containerDesc}>
             <div className={styles.desc}>
               <p>
-                From Nairobi's vibrant streets to captivating narratives, I
+                From Nairobi&apos;s vibrant streets to captivating narratives, I
                 craft experiences that ignite.I wear many hats as a
                 multi-disciplinary artist, blending UI/UX design, photography,
                 filmmaking, videography, and web development into a potent mix.
@@ -76,7 +76,7 @@ function Index() {
           <div className={styles.containerDesc}>
             <div className={styles.desc}>
               <p>
-                From Nairobi's vibrant streets to captivating narratives, I
+                From Nairobi&apos;s vibrant streets to captivating narratives, I
                 craft experiences that ignite.I wear many hats as a
                 multi-disciplinary artist, blending UI/UX design, photography,
                 filmmaking, videography, and web development into a potent mix.

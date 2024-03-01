@@ -2,7 +2,7 @@
 import React, { useRef, useEffect } from "react";
 import styles from "../styles/test.module.scss";
 
-export default function textMask() {
+export default function TextMask() {
   const container = useRef(null);
   const stickyMask = useRef(null);
   const initialMaskSize = 0.8;
