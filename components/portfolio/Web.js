@@ -6,15 +6,15 @@ import Image from "next/image";
 const slider1 = [
   {
     color: "#e3e5e7",
-    src: "Hakoweb.webp",
+    src: "hakoweb.webp",
   },
   {
     color: "#d6d7dc",
-    src: "NGO.webp",
+    src: "ngo.webp",
   },
   {
     color: "#e3e3e3",
-    src: "Havyshop.webp",
+    src: "havyshop.webp",
   },
   {
     color: "#21242b",
@@ -29,7 +29,7 @@ const slider2 = [
   },
   {
     color: "#e5e0e1",
-    src: "Safiriweb.webp",
+    src: "safiriweb.webp",
   },
   {
     color: "#d7d4cf",
@@ -37,7 +37,7 @@ const slider2 = [
   },
   {
     color: "#e1dad6",
-    src: "Havyunion.webp",
+    src: "havyunion.webp",
   },
 ];
 

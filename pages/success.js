@@ -20,6 +20,8 @@ const SuccessPage = () => {
         src="/images/success.webp" 
         alt="Thank You Image"
         className="w-32 h-32 rounded-full mb-4"
+        width={300}
+        height={200}
       />
     <h1 className="text-3xl font-bold mb-4 text-white">Thank you for your submission!</h1>
     <p className="text-lg mb-8 text-white">

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -69,7 +68,10 @@ const MobileNav = () => {
       {/* Logo */}
       <div className="text-xl font-bold">
         <Link href="/" legacyBehavior>
-        <Image className="w-8 h-8" src="/images/logo-sep.svg" alt="Logo" width={30} height={30} />
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M58 117H0L67.5 0H126.5L58 117Z" fill="white"/>
+<path d="M121 165H63L130.5 48H189.5L121 165Z" fill="white"/>
+</svg>
         </Link>
       </div>
 
