@@ -10,7 +10,7 @@ import Loader from '../components/Loader';
 import HomeHero from "../components/HomeHero";
 
 // Lazy-loaded
-const TextMask = lazy(() => {
+const Mask = lazy(() => {
   return new Promise(resolve => {
     setTimeout(() => {
       resolve(import("../components/TextMask"));
@@ -33,7 +33,7 @@ function Index() {
       <div className={styles.desktopOnlyContent}>
       <Suspense fallback={<Loader />}>
         <Intro />
-        <TextMask />
+        <Mask />
         <Parallax
           blur={0}
           bgImage="/images/nairobi.webp"
