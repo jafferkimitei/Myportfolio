@@ -1,11 +1,11 @@
-import floating1 from '../public/images/floating_1.jpg';
-import floating2 from '../public/images/floating_2.jpg';
-import floating3 from '../public/images/floating_3.jpg';
-import floating4 from '../public/images/floating_4.jpg';
-import floating5 from '../public/images/floating_5.jpg';
-import floating6 from '../public/images/floating_6.jpg';
-import floating7 from '../public/images/floating_7.jpg';
-import floating8 from '../public/images/floating_8.jpg';
+import floating1 from '../public/images/floating-1.webp';
+import floating2 from '../public/images/floating-2.webp';
+import floating3 from '../public/images/floating-3.webp';
+import floating4 from '../public/images/floating-4.webp';
+import floating5 from '../public/images/floating-5.webp';
+import floating6 from '../public/images/floating-6.webp';
+import floating7 from '../public/images/floating-7.webp';
+import floating8 from '../public/images/floating-8.webp';
 
 export { 
     floating1, 

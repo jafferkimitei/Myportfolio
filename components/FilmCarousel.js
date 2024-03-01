@@ -5,16 +5,16 @@ import 'slick-carousel/slick/slick-theme.css';
 import styles from '../styles/Love.module.scss';
 
 const carouselItems = [
-  { id: 1, title: 'Breaking Bad', imageUrl: '/images/films/breakingbad.jpg' },
-  { id: 2, title: 'Die Hard', imageUrl: '/images/films/diehard.jpg' },
-  { id: 3, title: 'Inception', imageUrl: '/images/films/inception.jpg' },
-  { id: 4, title: 'Lift', imageUrl: '/images/films/lift.jpg' },
-  { id: 5, title: 'Matrix', imageUrl: '/images/films/matrix.jpg' },
-  { id: 6, title: 'Troy', imageUrl: '/images/films/troy.jpg' },
-  { id: 7, title: 'The Beekeeper', imageUrl: '/images/films/thebeekeeper.jpg' },
-  { id: 8, title: 'Prison Break', imageUrl: '/images/films/prisonbreak.jpg' },
-  { id: 9, title: 'Wrong Turn', imageUrl: '/images/films/wrongturn.jpg' },
-  { id: 10, title: 'Death at a funeral', imageUrl: '/images/films/dcomedy.jpg' },
+  { id: 1, title: 'Breaking Bad', imageUrl: '/images/films/breakingbad.webp' },
+  { id: 2, title: 'Die Hard', imageUrl: '/images/films/diehard.webp' },
+  { id: 3, title: 'Inception', imageUrl: '/images/films/inception.webp' },
+  { id: 4, title: 'Lift', imageUrl: '/images/films/lift.webp' },
+  { id: 5, title: 'Matrix', imageUrl: '/images/films/matrix.webp' },
+  { id: 6, title: 'Troy', imageUrl: '/images/films/troy.webp' },
+  { id: 7, title: 'The Beekeeper', imageUrl: '/images/films/thebeekeeper.webp' },
+  { id: 8, title: 'Prison Break', imageUrl: '/images/films/prisonbreak.webp' },
+  { id: 9, title: 'Wrong Turn', imageUrl: '/images/films/wrongturn.webp' },
+  { id: 10, title: 'Death at a funeral', imageUrl: '/images/films/dcomedy.webp' },
 ];
 
 const carouselSettings = {

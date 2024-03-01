@@ -152,6 +152,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: linear-gradient(to bottom, #ffffff, #f0f0f0);
     transition: transform 0.2s ease-in-out;
+    margin-right: 10px;
+    align-items: center;
   
     &:hover {
       transform: translateY(-5px);
@@ -163,12 +165,14 @@
       border-radius: 8px 8px 0 0;
   
       img {
-        display:block;
+        display: block;
       }
     }
   
     .projectDetails {
       padding: 1em;
+      align-items: center;
+      justify-content: center;
   
       h2 {
         margin-top: 0;

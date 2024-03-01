@@ -7,7 +7,7 @@ function MyValue() {
   return (
     <>
       <div>
-      <Parallax bgImage="/images/values.jpg" strength={400} className={styles.valuesContainer}>
+      <Parallax bgImage="/images/values.webp" strength={400} className={styles.valuesContainer}>
         <h1 className={styles.valueT}>MY VALUES</h1>
         <p className={styles.principles}>
           <span>LIVE</span> BY PRINCIPLES

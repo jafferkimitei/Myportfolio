@@ -46,7 +46,7 @@ export default function Intro() {
           className={styles.introImage}
         >
           <Image
-    src={"/images/test.jpg"}
+    src={"/images/test.webp"}
     alt="intro image"
     fill={true}
     priority={true}

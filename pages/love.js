@@ -33,7 +33,7 @@ function Love() {
 
         <Parallax
           blur={0}
-          bgImage="/images/modalImage2.jpg"
+          bgImage="/images/modalImage2.webp"
           strength={200}
           className={styles.parallaxContainer}
         >
@@ -58,7 +58,7 @@ function Love() {
               <FilmCarousel />
             </div>
           </Parallax>
-        <Parallax blur={0} bgImage="/images/game3.jpg" strength={200}>
+        <Parallax blur={0} bgImage="/images/game3.webp" strength={200}>
           <div className={styles.gamesContainer}>
             <div className={styles.pageTextG}>
               <h1>

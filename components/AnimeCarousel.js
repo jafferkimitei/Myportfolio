@@ -5,16 +5,16 @@ import 'slick-carousel/slick/slick-theme.css';
 import styles from '../styles/Love.module.scss';
 
 const carouselItems = [
-  { id: 1, title: 'Bleach', imageUrl: '/images/films/bleach.jpg' },
-  { id: 2, title: 'How to train your dragon', imageUrl: '/images/films/dragon.jpg' },
-  { id: 3, title: 'Ghost in the shell', imageUrl: '/images/films/ghost.jpg' },
-  { id: 4, title: 'Rango', imageUrl: '/images/films/rango.jpg' },
-  { id: 5, title: 'Ice Age', imageUrl: '/images/films/iceage.jpg' },
-  { id: 6, title: 'Megamind', imageUrl: '/images/films/megamind.jpg' },
-  { id: 7, title: 'Naruto', imageUrl: '/images/films/naruto.jpg' },
-  { id: 8, title: 'Ratatouille', imageUrl: '/images/films/ratatouille.jpg' },
-  { id: 9, title: 'Shrek', imageUrl: '/images/films/shrek.jpg' },
-  { id: 10, title: 'Cars', imageUrl: '/images/films/cars.jpg' },
+  { id: 1, title: 'Bleach', imageUrl: '/images/films/bleach.webp' },
+  { id: 2, title: 'How to train your dragon', imageUrl: '/images/films/dragon.webp' },
+  { id: 3, title: 'Ghost in the shell', imageUrl: '/images/films/ghost.webp' },
+  { id: 4, title: 'Rango', imageUrl: '/images/films/rango.webp' },
+  { id: 5, title: 'Ice Age', imageUrl: '/images/films/iceage.webp' },
+  { id: 6, title: 'Megamind', imageUrl: '/images/films/megamind.webp' },
+  { id: 7, title: 'Naruto', imageUrl: '/images/films/naruto.webp' },
+  { id: 8, title: 'Ratatouille', imageUrl: '/images/films/ratatouille.webp' },
+  { id: 9, title: 'Shrek', imageUrl: '/images/films/shrek.webp' },
+  { id: 10, title: 'Cars', imageUrl: '/images/films/cars.webp' },
 ];
 
 const carouselSettings = {

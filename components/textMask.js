@@ -48,7 +48,8 @@ export default function TextMask() {
       <div ref={container} className={styles.containerT}>
         <div ref={stickyMask} className={styles.stickyMask}>
           <video autoPlay muted loop>
-            <source src="/videos/test.mp4" type="video/mp4" />
+            <source src="/videos/Opener.webm" type="video/webm" />
+            Your browser does not support the video tag.
           </video>
         </div>
       </div>

@@ -68,7 +68,7 @@ function services() {
                     </div>
                     <img
                       className="mx-auto md:max-md:-translate-x-[5%] md:my-0 my-8"
-                      src="/images/filmmaker.jpg"
+                      src="/images/filmmaker.webp"
                       width={519}
                       height={490}
                       alt="Illustration 01"
@@ -121,7 +121,7 @@ function services() {
                     </div>
                     <img
                       className="mx-auto md:max-md:-translate-x-[5%] md:my-0 my-8"
-                      src="/images/designer.jpg"
+                      src="/images/designer.webp"
                       width={519}
                       height={490}
                       alt="Illustration 02"
@@ -174,7 +174,7 @@ function services() {
                     </div>
                     <img
                       className="mx-auto md:max-md:-translate-x-[5%] md:my-0 my-8"
-                      src="/images/website.jpg"
+                      src="/images/website.webp"
                       width={519}
                       height={490}
                       alt="Illustration 03"

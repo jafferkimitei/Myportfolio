@@ -7,17 +7,17 @@ import Modal from '../modal';
 const projects = [
   {
     title: "Photography",
-    src: "modalImage1.jpg",
+    src: "modalimage1.webp",
     color: "#000000"
   },
   {
     title: "Cinematography",
-    src: "modalImage2.jpg",
+    src: "modalimage2.webp",
     color: "#8C8C8C"
   },
   {
     title: "UI UX Design",
-    src: "modalImage3.jpg",
+    src: "modalimage3.webp",
     color: "#EFE8D3"
   },
   {

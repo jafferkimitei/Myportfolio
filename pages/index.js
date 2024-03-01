@@ -36,7 +36,7 @@ function Index() {
         <TextMask />
         <Parallax
           blur={0}
-          bgImage="/images/nairobi.jpg"
+          bgImage="/images/nairobi.webp"
           strength={200}
           className={styles.parallaxContainer}
         >
@@ -69,7 +69,7 @@ function Index() {
         </Parallax>
         <Parallax
           blur={0}
-          bgImage="/images/nairobi.jpg"
+          bgImage="/images/nairobi.webp"
           strength={200}
           className={styles.parallaxContainer}
         >

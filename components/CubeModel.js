@@ -19,7 +19,7 @@ export default function cubeModel() {
     const smoothProgress = useSpring(progress, {damping: 20});
 
     return (
-        <Parallax blur={0}bgImage="/images/bg-image1.jpg" strength={200}>
+        <Parallax blur={0}bgImage="/images/bg-image1.webp" strength={200}>
         <div ref={container} className={styles.cubeMain}>
             <div className={styles.cube}>
             <div className={styles['canvas-container']}>
@@ -38,12 +38,12 @@ export default function cubeModel() {
 function Cube({progress}) {
 
     const mesh = useRef(null);
-    const texture_1 = useLoader(TextureLoader, "/images/cubeImage1.jpg")
-    const texture_2 = useLoader(TextureLoader, "/images/cubeImage2.jpg")
-    const texture_3 = useLoader(TextureLoader, "/images/cubeImage3.jpg")
-    const texture_4 = useLoader(TextureLoader, "/images/cubeImage4.jpg")
-    const texture_5 = useLoader(TextureLoader, "/images/cubeImage5.jpg")
-    const texture_6 = useLoader(TextureLoader, "/images/cubeImage6.jpg")
+    const texture_1 = useLoader(TextureLoader, "/images/cubeImage1.webp")
+    const texture_2 = useLoader(TextureLoader, "/images/cubeImage2.webp")
+    const texture_3 = useLoader(TextureLoader, "/images/cubeImage3.webp")
+    const texture_4 = useLoader(TextureLoader, "/images/cubeImage4.webp")
+    const texture_5 = useLoader(TextureLoader, "/images/cubeImage5.webp")
+    const texture_6 = useLoader(TextureLoader, "/images/cubeImage6.webp")
 
     return (
         <motion.mesh ref={mesh} rotation-y={progress} rotation-x={progress}>

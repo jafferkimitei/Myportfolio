@@ -11,7 +11,7 @@ import Loader from '../components/Loader';
 
 const ResponsiveNavbar = lazy(() => import("../components/ResponsiveNav"));
 
-const imageUrl2 = "/images/w13.jpg";
+const imageUrl2 = "/images/w13.webp";
 function Contact() {
   const languages = [
     "What's Up?",
@@ -62,7 +62,7 @@ function Contact() {
         </section>
         <Parallax
             blur={0}
-            bgImage="/images/paralla2.jpg"
+            bgImage="/images/paralla2.webp"
             strength={200}
             className={styles.parallaxContainer}
           >

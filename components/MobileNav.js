@@ -68,7 +68,7 @@ const mobileNav = () => {
       {/* Logo */}
       <div className="text-xl font-bold">
         <Link href="/" legacyBehavior>
-          Yunghavy
+        <img className="w-8 h-8" src="/images/logo-sep.svg" alt="Logo" />
         </Link>
       </div>
 

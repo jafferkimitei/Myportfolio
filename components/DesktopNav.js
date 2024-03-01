@@ -45,8 +45,8 @@ const desktopNav = () => {
     <div className="bg-black-800  p-4 flex items-center justify-between" >
       {/* Logo */}
       <div className="text-xl font-bold text-white hover:text-red-800">
-        <Link href="/"  legacyBehavior>
-          Yunghavy
+        <Link  href="/"  legacyBehavior>
+        <img className="w-8 h-8" src="/images/logo-sep.svg" alt="Logo" />
         </Link>
       </div>
 
