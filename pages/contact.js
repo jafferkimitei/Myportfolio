@@ -41,7 +41,7 @@ function Contact() {
       <NextSeo {...pagesSEO.contact} />
       <Suspense fallback={<Loader />}>
         <ResponsiveNavbar />
-        <section style={{ scrollBehavior: 'unset' }}>
+        <section className={styles.scroll} style={{ scrollBehavior: 'unset' }}>
           <div className={styles.Neo}>
             <div className={styles.imageContainer}>
               <Image
@@ -60,6 +60,7 @@ function Contact() {
           </div>
          
         </section>
+        <TestContact />
         <Parallax
             blur={0}
             bgImage="/images/paralla2.webp"
@@ -77,7 +78,6 @@ function Contact() {
               </div>
             </div>
           </Parallax>
-        <TestContact />
         <Footer />
       </Suspense>
       <Analytics />
