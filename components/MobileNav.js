@@ -69,7 +69,7 @@ const MobileNav = () => {
       {/* Logo */}
       <div className="text-xl font-bold">
         <Link href="/" legacyBehavior>
-        <Image  src="/images/logo.JPG" alt="Logo" width={100} height={100} />
+        <Image  src="/images/Logosep.svg" alt="Logo" width={30} height={30} />
         </Link>
       </div>
 

@@ -47,7 +47,7 @@ const DesktopNav = () => {
       {/* Logo */}
       <div className="text-xl font-bold text-white hover:text-red-800">
         <Link  href="/"  legacyBehavior>
-        <Image  src="/images/logo.JPG" alt="Logo" width={100} height={100} />
+        <Image  src="/images/Logosep.svg" alt="Logo" width={40} height={40} />
 
         </Link>
       </div>
