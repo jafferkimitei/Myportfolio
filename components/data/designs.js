@@ -1,40 +1,28 @@
 const designData = [
     {
       id: 1,
-      imageUrl: '/images/customs.webp',
-      title: 'Customs IBID',
-      technologies: ['Figma'],
-    },
-    {
-      id: 2,
-      imageUrl: '/images/vacar.webp',
-      title: 'Logistics App',
+      image: '/images/vacar.webp',
+      name: 'Logistics App',
       technologies: ['Figma & Photoshop'],
+      link: "https://www.figma.com/community/file/1293914119359954282/vacar-rentals",
     },
     {
-        id: 3,
-        imageUrl: '/images/hakoweb.webp',
-        title: 'HAKO Ecommerce',
+        id: 2,
+        image: '/images/hakoweb.webp',
+        name: 'HAKO Ecommerce',
         technologies: ['Figma & Midjourney'],
+        link: "https://www.figma.com/community/file/1293928777157676434/hako-ecommerce-design",
       },
+
       {
-        id: 4,
-        imageUrl: '/images/havyunion.webp',
-        title: 'Havy Union',
-        technologies: ['Adobe XD'],
-      },
-      {
-        id: 5,
-        imageUrl: '/images/ngo.webp',
-        title: 'Charity website',
+        id: 3,
+        image: '/images/expense.webp',
+        name: 'Expenditure App & Web',
         technologies: ['Figma'],
-      },
-      {
-        id: 6,
-        imageUrl: '/images/safiriweb.webp',
-        title: 'Safiri',
-        technologies: ['Figma'],
+        link: " https://www.figma.com/community/file/1346457365379041793/expenditure-dashboard",
       },
   ];
   
   export default designData;
+
+ 

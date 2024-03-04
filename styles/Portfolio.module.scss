@@ -144,36 +144,7 @@
       right: -30px;
     }
   }
-  .projectsCarousel2 {
-    width: 80%;
-    margin: 0 auto;
-    h1 {
-      text-align: center;
-      color: #e44b37;
-      font-size: 24px;
-      font-family: 'Brushstrike';
-      margin-top: 5vh;
-      margin-bottom: 5vh;
-    }
-  
-    .slick-dots {
-      bottom: 10px;
-    }
-  
-    .slick-prev,
-    .slick-next {
-      font-size: 24px;
-      color: #e44b37;
-    }
-  
-    .slick-prev {
-      left: -30px;
-    }
-  
-    .slick-next {
-      right: -30px;
-    }
-  }
+ 
   .projectCard {
     display: flex;
     flex-direction: column;
@@ -245,35 +216,7 @@
   }
 
 
-// UI UX DESIGNS HERE
 
-.designGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 16px;
-  padding: 16px;
-}
-
-.designItem {
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 8px;
-  transition: transform 0.2s ease-in-out;
-  background-color: #f4f4f4;
-  color: #050001;
-  text-align: center;
-  margin: 0;
-  padding: 12px;
-  &:hover {
-    transform: scale(1.05);
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-}
 
 
 
