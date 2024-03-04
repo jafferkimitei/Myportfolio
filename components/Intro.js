@@ -32,7 +32,7 @@ export default function Intro() {
     <div ref={homeHeader} className={styles.homeHeader}>
       <div className={styles.backgroundImage} ref={background}>
         <Image
-          src={"/images/bg.jpg"}
+          src={"/images/bg.webp"}
           fill={true}
           alt="background image"
           priority={true}
