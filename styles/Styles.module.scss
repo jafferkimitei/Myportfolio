@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Brushstrike';
+  src: url('/fonts/Brushstrike.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Brushstrike';
+  src: url('/fonts/Brushstrike.ttf') format('truetype'); 
+}
 .homeHeader{
     position: relative;
     width: 100%;
@@ -24,10 +32,7 @@
     position: relative;
     margin-top: 35vh;
 }
-@font-face {
-    font-family: 'Brushstrike';
-    src: url('/fonts/Brushstrike.ttf') format('truetype');
-  }
+
 .intro h1{
     color: #e44b37;
      font-family: 'Brushstrike';
@@ -79,10 +84,7 @@
   .spacer{
     height: 10vh;
   }
-  @font-face {
-    font-family: 'Brushstrike';
-    src: url('/fonts/Brushstrike.ttf') format('truetype'); 
-  }
+
   .image-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

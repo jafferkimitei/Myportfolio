@@ -25,7 +25,7 @@ function Love() {
       <div className={styles.body}>
         <Parallax
           blur={{ min: -30, max: 30 }}
-          bgImage="/images/bg.jpg"
+          bgImage="/images/bg.webp"
           strength={200}
         >
           <LoveHero />

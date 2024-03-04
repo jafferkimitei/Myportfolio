@@ -41,7 +41,7 @@ function Contact() {
       <NextSeo {...pagesSEO.contact} />
       <Suspense fallback={<Loader />}>
         <ResponsiveNavbar />
-        <section className={styles.scroll} style={{ scrollBehavior: 'unset' }}>
+        <section>
           <div className={styles.Neo}>
             <div className={styles.imageContainer}>
               <Image
@@ -49,7 +49,7 @@ function Contact() {
                 alt="Image"
                 width={600}
                 height={300}
-                ppriority={true}
+                priority={true}
               />
             </div>
             <div className={styles.textContainer}>

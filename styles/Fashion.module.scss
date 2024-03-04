@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Brushstrike';
+  src: url('/fonts/Brushstrike.ttf') format('truetype'); 
+}
 .scrollMain {
   overflow-x: hidden;
 }
@@ -51,10 +55,7 @@
 .spacer{
   height: 10vh;
 }
-@font-face {
-  font-family: 'Brushstrike';
-  src: url('/fonts/Brushstrike.ttf') format('truetype'); 
-}
+
 .textHead {
   text-align: center;
   color: #e44b37;

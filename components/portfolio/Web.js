@@ -63,7 +63,7 @@ export default function Web() {
             <div
               key={index}
               className={styles.project}
-              style={{ backgroundColor: "black" }}
+              style={{ backgroundColor: project.color }}
             >
               <div className={styles.imageCont}>
               <Image 

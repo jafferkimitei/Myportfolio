@@ -1,4 +1,12 @@
-
+@font-face {
+  font-family: 'Brushstrike';
+  src: url('/fonts/Brushstrike.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'Backflipss';
+  src: url('/fonts/Backflipss.ttf') format('truetype');
+  font-style: normal;
+}
 .sliderContainer {
     -ms-overflow-style: none;  
     scrollbar-width: none;  
@@ -50,15 +58,10 @@
 }
 
 
-@font-face {
-  font-family: 'Backflipss';
-  src: url('/fonts/Backflipss.ttf') format('truetype');
-  font-style: normal;
-}
+
 .titleT {
   font-family: "Backflipss";
   text-align: center;
-  // color: #ffffff;
   background-color: #050001;
   display: flex;
   flex-direction: column;
@@ -98,10 +101,7 @@
   width: 100%;
   height: 100%;
 }
-@font-face {
-  font-family: 'Brushstrike';
-  src: url('/fonts/Brushstrike.ttf') format('truetype'); 
-}
+
 // for the slider
 .sliderT {
   font-family: 'Brushstrike';
@@ -109,6 +109,10 @@
   text-align: center;
   color: #e44b37;
   font-size: 24px;
+  @media (min-width: 200px) and (max-width: 540px) {
+    font-size: 18px;
+    margin-top: 3vh;
+  }
 }
 .slidingImages {
   overflow: hidden;
@@ -119,11 +123,14 @@
   margin-top: 100px;
   background-color: white;
   z-index: 1;
+  @media (min-width: 200px) and (max-width: 540px) {
+    margin-top: 5vw;
+  }
   .slider {
     display: flex;
     position: relative;
     gap: 3vw;
-    width: 120vw;
+    width: 100vw;
     left: -10vw;
     .project {
       width: 25%;
@@ -131,6 +138,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @media (min-width: 200px) and (max-width: 540px) {
+        height: 30vw;
+      }
      
       .imageCont {
         position: relative;
@@ -147,13 +157,16 @@
     position: relative;
     .circle {
       height: 800%;
-      width: 120%;
+      width: 100%;
       left: -10%;
       border-radius: 0 0 50% 50%;
       background-color: white;
       z-index: 1;
       position: absolute;
       box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+      @media (min-width: 200px) and (max-width: 540px) {
+        height: 400%;
+      }
     }
   }
 }

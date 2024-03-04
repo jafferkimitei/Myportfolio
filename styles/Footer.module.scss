@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Brushstrike';
+  src: url('/fonts/Brushstrike.ttf') format('truetype');
+}
 .footerContainer {
   height: auto;
     background-color: #050001;
@@ -18,10 +22,7 @@ padding-right: 5.21em;
     padding-bottom: 4.17em;
     display: flex;
 }
-@font-face {
-  font-family: 'Brushstrike';
-  src: url('/fonts/Brushstrike.ttf') format('truetype');
-}
+
 .footerSignature {
   width: 100%; 
   height: auto;  

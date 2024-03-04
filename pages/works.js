@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useState, useEffect} from "react";
+import React, { Suspense, lazy, useState, useEffect } from "react";
 import Text from "../components/text";
 import styles from "../styles/Portfolio.module.scss";
 import { Parallax } from "react-parallax";
@@ -6,6 +6,7 @@ import { NextSeo } from "next-seo";
 import { pagesSEO } from "../seo.config";
 import { Analytics } from "@vercel/analytics/react";
 import Loader from "../components/Loader";
+import DesignGallery from "../components/portfolio/DesignGallery";
 
 // lazy-loaded
 const ResponsiveNavbar = lazy(() => import("../components/ResponsiveNav"));
@@ -54,7 +55,7 @@ export default function Work() {
           <ResponsiveNavbar />
           <Parallax
             blur={{ min: -30, max: 30 }}
-            bgImage="/images/bg.jpg"
+            bgImage="/images/bg.webp"
             strength={200}
           >
             <WorkHero />
@@ -70,8 +71,11 @@ export default function Work() {
           {/* Conditionally render Fashion and Portraits on larger screens */}
           {!isMobile && <Fashion />}
           {!isMobile && <Portraits />}
-          <Zoom />
-          <Slider />
+
+          {!isMobile && <Zoom />}
+          {!isMobile && <Slider />}
+
+          {isMobile && <DesignGallery />}
           <ProjectsCarousel />
           <NxtRates />
           <Footer />

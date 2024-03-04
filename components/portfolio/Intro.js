@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: "Web development",
-    src: "modalImage4.jpg",
+    src: "modalImage4.webp",
     color: "#706D63"
   }
 ]
