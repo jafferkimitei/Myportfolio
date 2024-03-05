@@ -64,7 +64,7 @@ function Index() {
       
       <div className={styles.mobileOnlyContent}>
       <Suspense fallback={<Loader />}>
-      <Parallax blur={{ min: -30, max: 30 }} bgImage="/images/bg.jpg" strength={200}>
+      <Parallax blur={{ min: -30, max: 30 }} bgImage="/images/bg.webp" strength={200}>
         <HomeHero />
         </Parallax>
         <Parallax
