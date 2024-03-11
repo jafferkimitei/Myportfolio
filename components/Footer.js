@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/Footer.module.scss';
 
+
 const Footer = () => {
   return (
     <footer className={styles.footerContainer}>
@@ -14,6 +15,8 @@ const Footer = () => {
           <a href="https://twitter.com/yunghavy" target="_blank" rel="noopener noreferrer">
             <Image src="/icons/twitter-x.svg" alt="Twitter Icon"  width={30} height={30}/>
           </a>
+        
+
           <a href="https://www.instagram.com/yunghavy/" target="_blank" rel="noopener noreferrer">
             <Image src="/icons/instagram.svg" alt="Instagram Icon" width={30} height={30}/>
           </a>

@@ -62,7 +62,7 @@ function Services() {
                         <h1 className="text-4xl font-extrabold text-red-50 mb-4">
                           Masterful Lens Wizard and Storytelling Virtuoso
                         </h1>
-                        <p className="text-red-400 mb-6">
+                        <p className="text-gray-200 mb-6">
                         From camera wizard to storytelling maestro: I transform moments to epic tales, making products shine like stars. My lenses are magic wands, weaving emotions into every frame. In the digital realm, I wield Photoshop and Lightroom like a virtuoso, crafting vibrant masterpieces. But storytelling is my true enchantment, scripting commercials and narratives that showcase my passion for film, TV, and the digital world
                         </p>
                       </div>
@@ -115,7 +115,7 @@ function Services() {
                         <h1 className="text-4xl font-extrabold text-red-50 mb-4">
                           Multifaceted Design Dynamo
                         </h1>
-                        <p className="text-red-400 mb-6">
+                        <p className="text-gray-200 mb-6">
                         I&apos;m a design chameleon, thriving in various domains like web, app, graphic design, and more. Armed with a keen eye for beauty and tech wizardry, I breathe life into ideas through stunning, user-friendly experiences. I craft interfaces, build brands, and conquer all things digital design, making me a force in the ever-changing design landscape.
                         </p>
                       </div>
@@ -168,7 +168,7 @@ function Services() {
                         <h1 className="text-4xl font-extrabold text-red-50 mb-4">
                           Full-stack Alchemist
                         </h1>
-                        <p className="text-red-400 mb-6">
+                        <p className="text-gray-200 mb-6">
                         I code magic webs: seamless experiences crafted with front-end finesse and robust back-end muscle. HTML, CSS, and JavaScript are my paintbrushes, and I wield Firebase, SQL, Laravel, Django, and JavaScript frameworks like a seasoned wizard. From blazing-fast loading times to intuitive navigation, I build captivating websites that exceed expectations and captivate users
                         </p>
                       </div>

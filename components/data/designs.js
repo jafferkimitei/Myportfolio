@@ -5,6 +5,7 @@ const designData = [
       name: 'Logistics App',
       technologies: ['Figma & Photoshop'],
       link: "https://www.figma.com/community/file/1293914119359954282/vacar-rentals",
+      alt: "Logistics App UI design mockup created with Figma & Photoshop."
     },
     {
         id: 2,
@@ -12,6 +13,7 @@ const designData = [
         name: 'HAKO Ecommerce',
         technologies: ['Figma & Midjourney'],
         link: "https://www.figma.com/community/file/1293928777157676434/hako-ecommerce-design",
+        alt: "HAKO Ecommerce website design mockup created with Figma & Midjourney."
       },
 
       {
@@ -20,6 +22,7 @@ const designData = [
         name: 'Expenditure App & Web',
         technologies: ['Figma'],
         link: " https://www.figma.com/community/file/1346457365379041793/expenditure-dashboard",
+        alt: "Expenditure App & Web design mockup created with Figma."
       },
   ];
   

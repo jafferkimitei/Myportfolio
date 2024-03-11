@@ -1,20 +1,20 @@
 
 const defaultSEO = {
-    title: 'Yung Havy',
-    description: 'Your one-stop creative for web development, photography, videography, and UI/UX design',
+    title: 'Yung Havy - Web Development & Visual Storytelling',
+    description: 'Stop settling for average. Get a website and visual storytelling that sets you apart. Work with Yung Havy.',
     canonical: 'https://www.yunghavy.com',
     openGraph: {
       type: 'website',
       locale: 'en_KE',
       url: 'https://www.yunghavy.com',
-      title: 'Yung Havy - The Maesso of Visual Storytelling',
-      description: 'Nairobi Photographer, Web developer, UI/UX Designer and Film maker.',
+      title: 'Bring Your Vision to Life - Web Design, Video & Photography by Yung Havy',
+      description: 'Get your website designed, developed, and elevate your brand with Yung Havy. Stunning visuals, exceptional storytelling through music video directing, photography, and design services.',
       images: [
         {
           url: '/images/logo.webp',
           width: 1200,
           height: 630,
-          alt: 'Yung Havy',
+          alt: 'I am Yung Havy',
         },
       ],
     },

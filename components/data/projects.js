@@ -7,6 +7,7 @@ const projects = [
       technologies: ["Bootstrap, Html5 & Vanilla js"],
       link: "https://mechauto.netlify.app/",
       image: "/images/Mechauto.webp",
+      alt: "Mechauto website screenshot showcasing car repair services."
     },
     {
         id: 2,
@@ -15,14 +16,16 @@ const projects = [
         technologies: ["Bootstrap"],
         link: "https://brightertomorrows.netlify.app/",
         image: "/images/Brighter.webp",
+        alt: "Brighter Tomorrows website screenshot - NGO for women & children empowerment." 
       },
       {
         id: 3,
-        name: "Yung Havy",
-        description: "My website",
-        technologies: ["NextJs, ReactJs, GSAP, Sass"],
-        link: "https://www.yunghavy.com/",
-        image: "/images/yunghavy.webp",
+        name: "SARENCO INC",
+        description: "A logistics company based in the USA",
+        technologies: ["NextJs, Tailwind"],
+        link: "https://sarencoinc.netlify.app/",
+        image: "/images/sarenco.webp",
+        alt: "SARENCO INC website screenshot - US-based logistics company."
       }
   ];
   
