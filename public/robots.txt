@@ -1,9 +1,0 @@
-User-agent: *
-Disallow: /404
-Disallow: /500
-Disallow: /success
-
-
-# Allow all other pages
-Allow: /
-Sitemap: https://www.yunghavy.com/sitemap.xml
