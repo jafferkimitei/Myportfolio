@@ -24,11 +24,6 @@ const Custom404 = () => {
                   Go back home
                 </a>
               </Link>
-              <Link href="/support" legacyBehavior>
-                <a className="inline-flex items-center rounded-md border border-transparent bg-pink-100 px-4 py-2 text-sm font-medium text-black hover:bg-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2">
-                  Contact support
-                </a>
-              </Link>
             </div>
           </div>
         </main>

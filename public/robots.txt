@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.yunghavy.com/
+
+# Sitemaps
+Sitemap: https://www.yunghavy.com/sitemap.xml

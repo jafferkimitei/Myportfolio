@@ -1,5 +1,3 @@
-
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     formats: ['image/webp'],
@@ -14,4 +12,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

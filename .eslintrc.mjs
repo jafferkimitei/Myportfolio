@@ -29,11 +29,11 @@ export default {
         "react"
     ],
     "rules": {
-        "indent": ["error", 2],               // Use 2 spaces for indentation
-        "linebreak-style": ["error", "unix"], // Use Unix line endings
-        "quotes": ["error", "single"],        // Use single quotes
-        "semi": ["error", "always"],          // Require semicolons at the end of statements
-        "react/jsx-uses-react": "off",        // Remove unnecessary React warnings
+        "indent": ["error", 2],              
+        "linebreak-style": ["error", "unix"], 
+        "quotes": ["error", "single"],        
+        "semi": ["error", "always"],          
+        "react/jsx-uses-react": "off",        
         "react/react-in-jsx-scope": "off",
         'react/prop-types': 'off', 
     }
