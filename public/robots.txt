@@ -1,6 +1,10 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /success
+Disallow: /GlobalContext
+Disallow: /5
+Disallow: /404
 
 # Host
 Host: https://www.yunghavy.com/

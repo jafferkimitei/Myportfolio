@@ -6,6 +6,12 @@ module.exports = {
       {
         userAgent: '*',
         allow: '/',
+        disallow: [
+        '/success',
+        '/GlobalContext',
+        '/5',
+        '/404',
+      ],
       },
     ],
   },

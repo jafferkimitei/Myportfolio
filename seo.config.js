@@ -11,7 +11,13 @@ const defaultSEO = {
       description: 'Get your website designed, developed, and elevate your brand with Yung Havy. Stunning visuals, exceptional storytelling through music video directing, photography, and design services.',
       images: [
         {
-          url: '/images/logo.webp',
+          url: '/images/about.webp',
+          width: 1200,
+          height: 630,
+          alt: 'I am Yung Havy',
+        },
+        {
+          url: '/images/about.jpg',
           width: 1200,
           height: 630,
           alt: 'I am Yung Havy',

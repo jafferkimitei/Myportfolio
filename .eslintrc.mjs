@@ -26,15 +26,18 @@ export default {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        'unused-imports'
     ],
     "rules": {
-        "indent": ["error", 2],              
-        "linebreak-style": ["error", "unix"], 
-        "quotes": ["error", "single"],        
-        "semi": ["error", "always"],          
-        "react/jsx-uses-react": "off",        
+        "indent": ["error", 2],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "react/jsx-uses-react": "off",
         "react/react-in-jsx-scope": "off",
-        'react/prop-types': 'off', 
+        'react/prop-types': 'off',
+        'unused-imports/no-unused-imports': 'error',
+        'unused-imports/no-unused-vars': 'warn',
     }
 }
