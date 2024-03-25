@@ -24,7 +24,7 @@ const projects = [
         description: "This is a full template of a logistics trucking solutions on sale",
         technologies: ["NextJs, Tailwind"],
         link: "https://logisticsweb.netlify.app/",
-        image: "/images/sarenco.webp",
+        image: "/images/logisticsApp.webp",
         alt: "Logistics App"
       }
   ];
