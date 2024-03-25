@@ -20,12 +20,12 @@ const projects = [
       },
       {
         id: 3,
-        name: "SARENCO INC",
-        description: "A logistics company based in the USA",
+        name: "LOGISTICS APP",
+        description: "This is a full template of a logistics trucking solutions on sale",
         technologies: ["NextJs, Tailwind"],
-        link: "https://sarencoinc.netlify.app/",
+        link: "https://logisticsweb.netlify.app/",
         image: "/images/sarenco.webp",
-        alt: "SARENCO INC website screenshot - US-based logistics company."
+        alt: "Logistics App"
       }
   ];
   
