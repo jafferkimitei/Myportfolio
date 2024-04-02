@@ -20,12 +20,12 @@ const projects = [
       },
       {
         id: 3,
-        name: "LOGISTICS APP",
-        description: "This is a full template of a logistics trucking solutions on sale",
+        name: "SARENCO INC",
+        description: "Sarenco Inc is a leading logistics company dedicated to providing comprehensive transportation and supply chain solutions. With years of experience in the industry, we specialize in connecting businesses with reliable carriers to ensure timely deliveries and efficient transportation services.",
         technologies: ["NextJs, Tailwind"],
-        link: "https://logisticsweb.netlify.app/",
+        link: "https://sarenco-inc.vercel.app//",
         image: "/images/logisticsApp.webp",
-        alt: "Logistics App"
+        alt: "Sarenco Inc."
       }
   ];
   
