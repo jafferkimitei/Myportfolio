@@ -21,7 +21,7 @@ const projects = [
       {
         id: 3,
         name: "SARENCO INC",
-        description: "Sarenco Inc is a leading logistics company dedicated to providing comprehensive transportation and supply chain solutions. With years of experience in the industry, we specialize in connecting businesses with reliable carriers to ensure timely deliveries and efficient transportation services.",
+        description: "Sarenco Inc is a leading logistics company dedicated to providing comprehensive transportation and supply chain solutions.",
         technologies: ["NextJs, Tailwind"],
         link: "https://sarenco-inc.vercel.app//",
         image: "/images/logisticsApp.webp",
