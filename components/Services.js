@@ -74,7 +74,7 @@ function Services() {
                           photography; in the realm of video, I weave together
                           mesmerizing music videos, captivating fashion films,
                           and compelling cinematic narratives. My camera is not
-                          just a tool; it's a conduit through which I channel
+                          just a tool; it&apos;s a conduit through which I channel
                           emotions, creativity, and imagination, transforming
                           ordinary moments into extraordinary tales.
                         </p>
@@ -129,7 +129,7 @@ function Services() {
                           UI UX Designer
                         </h3>
                         <p className="text-gray-200 mb-6">
-                          As a UI/UX Designer, I'm a versatile design maestro,
+                          As a UI/UX Designer, I&apos;m a versatile design maestro,
                           specializing in crafting seamless user experiences
                           across web, app, and graphic design realms. With a
                           fusion of aesthetic finesse and technical expertise, I
