@@ -48,13 +48,13 @@ const defaultSEO = {
   const pagesSEO = {
     index: {
       ...defaultSEO,
-      keywords: ['web development', 'visual storytelling', 'Yung Havy'],
-    metaRobots: 'index, follow',
-    structuredData: {
-      type: 'WebPage',
-      name: 'Home',
-      description: 'Explore the world of web development and visual storytelling with Yung Havy.',
-    },
+    //   keywords: ['web development', 'visual storytelling', 'Yung Havy'],
+    // metaRobots: 'index, follow',
+    // structuredData: {
+    //   type: 'WebPage',
+    //   name: 'Home',
+    //   description: 'Explore the world of web development and visual storytelling with Yung Havy.',
+    // },
 
     },
     love: {
@@ -62,13 +62,13 @@ const defaultSEO = {
       title: 'The loves of Yunghavy',
       description: 'Explore the passions that fuel my creative fire for visual storytelling.',
       canonical: 'https://www.yunghavy.com/love',
-      keywords: ['passions', 'likes', 'hobbies'],
-    metaRobots: 'index, follow',
-    structuredData: {
-      type: 'WebPage',
-      name: 'The Loves of Yunghavy',
-      description: 'Discover the diverse passions that inspire Yung Havy in his creative journey.',
-    },
+    //   keywords: ['passions', 'likes', 'hobbies'],
+    // metaRobots: 'index, follow',
+    // structuredData: {
+    //   type: 'WebPage',
+    //   name: 'The Loves of Yunghavy',
+    //   description: 'Discover the diverse passions that inspire Yung Havy in his creative journey.',
+    // },
     },
 
     works: {
@@ -76,13 +76,13 @@ const defaultSEO = {
       title: 'Selected Works of Yunghavy',
       description: 'Witness the magic of Yung Havy through stunning visuals and creative projects.',
       canonical: 'https://www.yunghavy.com/works',
-      keywords: ['portfolio', 'projects', 'visuals', 'Yunghavy'],
-      metaRobots: 'index, follow',
-      structuredData: {
-        type: 'WebPage',
-        name: 'Selected Works',
-        description: 'Explore a curated selection of Yung Havy\'s creative projects and visual works.',
-      },
+      // keywords: ['portfolio', 'projects', 'visuals', 'Yunghavy'],
+      // metaRobots: 'index, follow',
+      // structuredData: {
+      //   type: 'WebPage',
+      //   name: 'Selected Works',
+      //   description: 'Explore a curated selection of Yung Havy\'s creative projects and visual works.',
+      // },
     },
 
      rates: {
@@ -90,26 +90,26 @@ const defaultSEO = {
     title: 'Rates of Yunghavy',
     description: 'Invest in visual content that captures your essence and amplifies your brand with affordable rates.',
     canonical: 'https://www.yunghavy.com/rates',
-    keywords: ['pricing', 'rates', 'services', 'Yunghavy'],
-    metaRobots: 'index, follow',
-    structuredData: {
-      type: 'WebPage',
-      name: 'Rates',
-      description: 'Discover the pricing and rates for Yung Havy\'s web development, visual storytelling, and design services.',
-    },
+    // keywords: ['pricing', 'rates', 'services', 'Yunghavy'],
+    // metaRobots: 'index, follow',
+    // structuredData: {
+    //   type: 'WebPage',
+    //   name: 'Rates',
+    //   description: 'Discover the pricing and rates for Yung Havy\'s web development, visual storytelling, and design services.',
+    // },
   },
-  contact: {
+   contact: {
     ...defaultSEO,
     title: 'Contact Yunghavy',
     description: 'Connect with Yung Havy and discuss how his solutions can elevate your digital presence.',
     canonical: 'https://www.yunghavy.com/contact',
-    keywords: ['contact', 'reach out', 'communication', 'Yunghavy'],
-    metaRobots: 'index, follow',
-    structuredData: {
-      type: 'ContactPage',
-      name: 'Contact',
-      description: 'Get in touch with Yung Havy to explore collaboration opportunities and discuss your digital projects.',
-    },
+    // keywords: ['contact', 'reach out', 'communication', 'Yunghavy'],
+    // metaRobots: 'index, follow',
+    // structuredData: {
+    //   type: 'ContactPage',
+    //   name: 'Contact',
+    //   description: 'Get in touch with Yung Havy to explore collaboration opportunities and discuss your digital projects.',
+    // },
   },
 };
 

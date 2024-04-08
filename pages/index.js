@@ -53,10 +53,10 @@ function Index() {
             </div>
           </div>
         </Parallax>
-        <TextAbout />
+        {/* <TextAbout /> */}
         <Expertise />
         <Services />
-        <MyValues />
+        {/* <MyValues /> */}
         <NxtLoves />
         <Footer />
         </Suspense>
@@ -89,7 +89,7 @@ function Index() {
         {/* <TextAbout /> */}
         <Expertise />
         <Services />
-        <MyValues />
+        {/* <MyValues /> */}
         <NxtLoves />
         <Footer />
         </Suspense>

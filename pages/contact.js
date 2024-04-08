@@ -11,7 +11,7 @@ import Loader from '../components/Loader';
 
 const ResponsiveNavbar = lazy(() => import("../components/ResponsiveNav"));
 
-const imageUrl2 = "/images/w13.webp";
+const imageUrl2 = "/images/myloves.jpg";
 function Contact() {
   const languages = [
     "What's Up?",
@@ -46,7 +46,7 @@ function Contact() {
             <div className={styles.imageContainer}>
               <Image
                 src={imageUrl2}
-                alt="Image"
+                alt="Yung Havy ~ Contact Page"
                 width={600}
                 height={300}
                 priority={true}
