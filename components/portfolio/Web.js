@@ -13,10 +13,6 @@ const slider1 = [
     src: "NGO.webp",
   },
   {
-    color: "#e3e3e3",
-    src: "Havyshop.webp",
-  },
-  {
     color: "#21242b",
     src: "vacar.webp",
   },
@@ -30,10 +26,6 @@ const slider2 = [
   {
     color: "#e5e0e1",
     src: "Safiriweb.webp",
-  },
-  {
-    color: "#d7d4cf",
-    src: "customs.webp",
   },
   {
     color: "#e1dad6",
